@@ -1,0 +1,29 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Database files
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Node
+node_modules/
+
+# Local tooling
+.vscode/
+.idea/
+
+# Logs / temp
+*.log
+*.tmp
+
+# Deployment artifacts
+dist/
+build/
+
+# Accidental duplicate media exports
+*.webp.webp
+*.webp.png
+*.mp4.mp4
