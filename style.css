@@ -36,6 +36,8 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -43,6 +45,8 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
   line-height: 1.6;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   background:
     radial-gradient(circle at top left, rgba(58, 123, 108, 0.16), transparent 30%),
@@ -90,6 +94,51 @@ video {
 .container {
   width: min(var(--container), calc(100% - 2rem));
   margin: 0 auto;
+}
+
+.site-shell,
+main,
+.container,
+.nav-wrapper,
+.hero-grid,
+.about-grid,
+.contact-grid,
+.sectors-layout,
+.sectors-showcase,
+.services-grid,
+.sectors-grid,
+.reasons-grid,
+.hero-copy,
+.about-copy,
+.contact-copy,
+.about-pillars,
+.contact-stack,
+.visual-panel,
+.visual-panel-shell,
+.visual-display,
+.sector-visual,
+.media-card,
+.contact-card,
+.contact-item,
+.footer-content,
+.footer-meta,
+.footer-legal {
+  min-width: 0;
+}
+
+.hero-media,
+.hero-video-frame,
+.hero-video-fallback,
+.hero-video-placeholder,
+.hero-video,
+.hero-video-poster,
+.visual-panel,
+.visual-panel-shell,
+.visual-display,
+.sector-visual,
+.media-card,
+.media-card-image {
+  max-width: 100%;
 }
 
 .section {
@@ -1023,8 +1072,46 @@ video {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .container {
     width: min(var(--container), calc(100% - 1.25rem));
+  }
+
+  .site-shell,
+  main,
+  .container,
+  .nav-wrapper,
+  .hero-grid,
+  .hero-copy,
+  .hero-actions,
+  .about-grid,
+  .about-copy,
+  .about-pillars,
+  .visual-panel,
+  .visual-panel-shell,
+  .visual-display,
+  .media-card,
+  .media-card-image,
+  .sectors-layout,
+  .sectors-showcase,
+  .sector-visual,
+  .contact-grid,
+  .contact-copy,
+  .contact-stack,
+  .contact-card,
+  .contact-item,
+  .footer-content,
+  .footer-meta,
+  .footer-legal {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .section {
@@ -1041,26 +1128,36 @@ video {
 
   .nav-wrapper {
     min-height: 78px;
+    gap: 0.85rem;
   }
 
   .nav-toggle {
     display: inline-block;
+    flex-shrink: 0;
   }
 
   .nav {
     position: absolute;
     top: calc(100% + 0.75rem);
-    left: 0.625rem;
-    right: 0.625rem;
+    left: 0;
+    right: 0;
     display: none;
     flex-direction: column;
     align-items: stretch;
     gap: 0.35rem;
+    width: auto;
+    max-width: calc(100vw - 1.25rem);
+    margin: 0 0.625rem;
     padding: 0.9rem;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     background: rgba(7, 22, 19, 0.98);
     box-shadow: var(--shadow-panel);
+  }
+
+  .brand,
+  .brand-text {
+    min-width: 0;
   }
 
   .nav.is-open {
@@ -1072,17 +1169,31 @@ video {
     padding: 6.9rem 0 5.2rem;
   }
 
+  .hero-media,
+  .hero-video-frame,
+  .hero-video-fallback,
+  .hero-video-placeholder,
+  .hero-video,
+  .hero-video-poster {
+    inset: 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
   .hero-copy {
     max-width: 100%;
+    width: 100%;
   }
 
   .hero-copy::before {
-    inset: -1.45rem -1.15rem -1.3rem -1.15rem;
+    inset: -1rem 0 -0.9rem 0;
     border-radius: 26px;
+    filter: blur(18px);
   }
 
   .hero-video {
-    object-position: 68% center;
+    object-position: 62% center;
   }
 
   .hero h1 {
@@ -1112,10 +1223,23 @@ video {
     margin-top: 2rem;
   }
 
+  .hero-actions > * {
+    width: 100%;
+  }
+
   .button {
     width: 100%;
     max-width: 100%;
     min-height: 50px;
+  }
+
+  .about-grid,
+  .sectors-showcase,
+  .contact-grid,
+  .services-grid,
+  .sectors-grid,
+  .reasons-grid {
+    grid-template-columns: 1fr;
   }
 
   .section-heading {
@@ -1146,13 +1270,32 @@ video {
     line-height: 1.72;
   }
 
+  .hero-text,
+  .about-copy p,
+  .contact-copy p,
+  .contact-note p,
+  .contact-item strong,
+  .contact-item small {
+    overflow-wrap: anywhere;
+  }
+
   .visual-display,
   .sector-visual {
+    min-height: 0;
     aspect-ratio: 16 / 10;
   }
 
   .visual-panel-about .visual-display {
     aspect-ratio: 16 / 9.4;
+  }
+
+  .visual-panel,
+  .visual-panel-shell,
+  .media-card,
+  .visual-display,
+  .sector-visual,
+  .contact-card {
+    overflow: hidden;
   }
 
   .contact-note {
@@ -1262,7 +1405,7 @@ video {
   }
 
   .hero-video {
-    object-position: 72% center;
+    object-position: 60% center;
   }
 
   .contact-card {

@@ -4,6 +4,26 @@ Toutes les évolutions notables de ce projet doivent être documentées ici.
 
 Le format suit une logique simple inspirée de Keep a Changelog et du versioning sémantique.
 
+## [Unreleased]
+
+### Planned
+
+- Optimisation réelle des assets médias lourds
+- Suppression des doublons d’assets inutilisés
+- Ajout éventuel d’un staging automatisé
+- Vérifications Lighthouse / performance plus poussées
+
+## [1.0.1] - 2026-04-27
+
+Hotfix mobile de production pour corriger les débordements horizontaux et stabiliser la mise en page responsive.
+
+### Fixed
+
+- Fixed mobile horizontal overflow
+- Fixed responsive image cards
+- Improved hero mobile layout
+- Improved mobile section grids
+
 ## [1.0.0] - 2026-04-24
 
 Première release de production stable du site Atlas Energie Conseil.
@@ -30,12 +50,3 @@ Première release de production stable du site Atlas Energie Conseil.
 
 - Cette version doit être figée comme release initiale `v1.0.0`
 - Les prochaines évolutions doivent partir de la branche `develop`
-
-## [Unreleased]
-
-### Planned
-
-- Optimisation réelle des assets médias lourds
-- Suppression des doublons d’assets inutilisés
-- Ajout éventuel d’un staging automatisé
-- Vérifications Lighthouse / performance plus poussées
