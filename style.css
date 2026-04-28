@@ -116,6 +116,7 @@ section,
 .sectors-showcase,
 .services-grid,
 .situations-grid,
+.systems-grid,
 .sectors-grid,
 .reasons-grid,
 .hero-copy,
@@ -137,6 +138,10 @@ section,
 .sector-visual,
 .media-card,
 .situation-card,
+.system-card,
+.system-card-header,
+.system-chip,
+.system-detail,
 .info-card,
 .sector-card,
 .reason-card,
@@ -162,6 +167,10 @@ section,
 .media-card,
 .media-card-image,
 .situation-card,
+.system-card,
+.system-card-header,
+.system-chip,
+.system-detail,
 .info-card,
 .sector-card,
 .reason-card,
@@ -509,6 +518,7 @@ section,
 .about-copy p,
 .section-cta p,
 .situation-card p,
+.system-card p,
 .info-card p,
 .sector-card p,
 .reason-card p,
@@ -619,6 +629,11 @@ section,
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.systems-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.35rem;
+}
+
 .services-grid,
 .sectors-grid,
 .reasons-grid {
@@ -626,6 +641,7 @@ section,
 }
 
 .situation-card,
+.system-card,
 .info-card,
 .sector-card,
 .reason-card,
@@ -653,6 +669,47 @@ section,
     var(--shadow-panel);
 }
 
+.system-card {
+  min-height: 100%;
+  display: grid;
+  align-content: start;
+  gap: 1.05rem;
+  padding: var(--card-padding);
+  background:
+    linear-gradient(145deg, rgba(127, 201, 181, 0.06), rgba(255, 255, 255, 0.012)),
+    rgba(10, 31, 28, 0.82);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.045),
+    var(--shadow-panel);
+}
+
+.system-card-header {
+  display: grid;
+  gap: 0.88rem;
+  align-content: start;
+}
+
+.system-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 32px;
+  padding: 0.34rem 0.72rem;
+  border: 1px solid rgba(197, 239, 226, 0.18);
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, rgba(127, 201, 181, 0.12), rgba(255, 255, 255, 0.018)),
+    rgba(4, 15, 13, 0.58);
+  color: var(--accent-strong);
+  font-size: 0.77rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
 .card-index {
   display: inline-flex;
   align-items: center;
@@ -668,6 +725,7 @@ section,
 }
 
 .situation-card h3,
+.system-card h3,
 .info-card h3,
 .sector-card h3,
 .reason-card h3 {
@@ -677,11 +735,47 @@ section,
   overflow-wrap: break-word;
 }
 
+.system-card h3 {
+  margin: 0;
+}
+
 .situation-card p,
+.system-card p,
 .info-card p,
 .sector-card p,
 .reason-card p {
   margin: 0;
+}
+
+.system-description {
+  color: rgba(245, 247, 243, 0.92);
+  font-weight: 600;
+}
+
+.system-detail {
+  display: grid;
+  gap: 0.34rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(197, 239, 226, 0.1);
+}
+
+.system-label {
+  color: var(--accent-strong);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.system-note {
+  margin-top: 0.12rem;
+  padding: 0.92rem 1rem;
+  border-left: 1px solid rgba(197, 239, 226, 0.18);
+  border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+  background: linear-gradient(90deg, rgba(127, 201, 181, 0.07), rgba(127, 201, 181, 0.018));
+  color: rgba(245, 247, 243, 0.9);
+  font-weight: 600;
 }
 
 .section-cta {
@@ -925,6 +1019,7 @@ section,
 .contact-item:hover,
 .contact-item:focus-visible,
 .situation-card:hover,
+.system-card:hover,
 .info-card:hover,
 .sector-card:hover,
 .reason-card:hover {
@@ -944,6 +1039,7 @@ section,
 }
 
 .situation-card:hover,
+.system-card:hover,
 .info-card:hover,
 .sector-card:hover,
 .reason-card:hover,
@@ -1205,10 +1301,15 @@ section,
   .section-heading,
   .card-grid,
   .situations-grid,
+  .systems-grid,
   .services-grid,
   .sectors-grid,
   .reasons-grid,
   .situation-card,
+  .system-card,
+  .system-card-header,
+  .system-chip,
+  .system-detail,
   .info-card,
   .sector-card,
   .reason-card,
@@ -1394,6 +1495,7 @@ section,
   .sectors-showcase,
   .contact-grid,
   .situations-grid,
+  .systems-grid,
   .services-grid,
   .sectors-grid,
   .reasons-grid {
@@ -1415,6 +1517,7 @@ section,
 
   .card-grid,
   .situations-grid,
+  .systems-grid,
   .services-grid,
   .sectors-grid,
   .reasons-grid {
@@ -1425,6 +1528,7 @@ section,
   .about-copy p,
   .section-cta p,
   .situation-card p,
+  .system-card p,
   .info-card p,
   .sector-card p,
   .reason-card p,
@@ -1515,6 +1619,7 @@ section,
 
   .contact-item,
   .situation-card,
+  .system-card,
   .info-card,
   .sector-card,
   .reason-card {
@@ -1602,6 +1707,7 @@ section,
 
   .visual-panel,
   .situation-card,
+  .system-card,
   .info-card,
   .sector-card,
   .reason-card,
@@ -1624,6 +1730,7 @@ section,
   }
 
   .situation-card,
+  .system-card,
   .info-card,
   .sector-card,
   .reason-card,
