@@ -4,9 +4,9 @@ Site one-page premium en `HTML`, `CSS` et `JavaScript` pour Atlas Energie Consei
 
 ## Version actuelle
 
-La version de référence actuelle est `v1.0.1`.
+La version de référence actuelle est `v1.0.2`.
 
-Cette version correspond au hotfix mobile-responsive de production appliqué après la première release stable du site vitrine.
+Cette version correspond à la stabilisation mobile de production avec correction des débordements horizontaux, des cartes médias et du Hero sur smartphone.
 
 ## Stack
 
@@ -60,7 +60,7 @@ Exemples :
 7. Préparer la release et les notes de version.
 8. Fusionner `develop` dans `main`.
 9. Déployer `main` en production.
-10. Taguer la release, par exemple `v1.0.1`.
+10. Taguer la release, par exemple `v1.0.2`.
 
 ## Déploiement
 
@@ -83,6 +83,6 @@ Le projet est statique et peut être déployé facilement sur :
 Créer le dépôt Git/GitHub puis :
 
 1. commit du site actuel
-2. tag `v1.0.1`
+2. tag `v1.0.2`
 3. création de `develop`
 4. démarrage des futures évolutions sur `feature/*`

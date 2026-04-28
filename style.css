@@ -70,6 +70,10 @@ video {
   max-width: 100%;
 }
 
+img {
+  height: auto;
+}
+
 .site-shell {
   min-height: 100vh;
 }
@@ -98,8 +102,13 @@ video {
 
 .site-shell,
 main,
+header,
+footer,
+section,
 .container,
 .nav-wrapper,
+.brand,
+.brand-text,
 .hero-grid,
 .about-grid,
 .contact-grid,
@@ -109,6 +118,11 @@ main,
 .sectors-grid,
 .reasons-grid,
 .hero-copy,
+.hero-badge,
+.hero-text,
+.hero-actions,
+.button,
+.section-heading,
 .about-copy,
 .contact-copy,
 .about-pillars,
@@ -118,11 +132,15 @@ main,
 .visual-display,
 .sector-visual,
 .media-card,
+.info-card,
+.sector-card,
+.reason-card,
 .contact-card,
 .contact-item,
 .footer-content,
 .footer-meta,
-.footer-legal {
+.footer-legal,
+.legal-modal-panel {
   min-width: 0;
 }
 
@@ -137,7 +155,12 @@ main,
 .visual-display,
 .sector-visual,
 .media-card,
-.media-card-image {
+.media-card-image,
+.info-card,
+.sector-card,
+.reason-card,
+.contact-card,
+.contact-item {
   max-width: 100%;
 }
 
@@ -462,6 +485,7 @@ main,
   margin: 0;
   letter-spacing: -0.03em;
   text-wrap: balance;
+  overflow-wrap: break-word;
 }
 
 .hero h1 {
@@ -633,6 +657,7 @@ main,
   margin: 1.05rem 0 0.72rem;
   font-size: 1.12rem;
   line-height: 1.28;
+  overflow-wrap: break-word;
 }
 
 .info-card p,
@@ -1083,13 +1108,34 @@ main,
     width: min(var(--container), calc(100% - 1.25rem));
   }
 
+  .header,
+  .hero,
+  .section,
+  .footer {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .site-shell,
   main,
   .container,
   .nav-wrapper,
+  .brand,
+  .brand-text,
   .hero-grid,
   .hero-copy,
+  .hero-badge,
   .hero-actions,
+  .button,
+  .section-heading,
+  .card-grid,
+  .services-grid,
+  .sectors-grid,
+  .reasons-grid,
+  .info-card,
+  .sector-card,
+  .reason-card,
   .about-grid,
   .about-copy,
   .about-pillars,
@@ -1131,6 +1177,26 @@ main,
     gap: 0.85rem;
   }
 
+  .brand {
+    width: auto;
+    flex: 1 1 auto;
+    max-width: calc(100% - 58px);
+  }
+
+  .brand-text {
+    width: auto;
+    overflow: hidden;
+  }
+
+  .brand-text strong,
+  .brand-text small {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .nav-toggle {
     display: inline-block;
     flex-shrink: 0;
@@ -1146,8 +1212,8 @@ main,
     align-items: stretch;
     gap: 0.35rem;
     width: auto;
-    max-width: calc(100vw - 1.25rem);
-    margin: 0 0.625rem;
+    max-width: 100%;
+    margin: 0;
     padding: 0.9rem;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -1167,6 +1233,7 @@ main,
   .hero {
     min-height: auto;
     padding: 6.9rem 0 5.2rem;
+    display: flex;
   }
 
   .hero-media,
@@ -1179,6 +1246,7 @@ main,
     width: 100%;
     max-width: 100%;
     min-width: 0;
+    overflow: hidden;
   }
 
   .hero-copy {
@@ -1197,16 +1265,25 @@ main,
   }
 
   .hero h1 {
-    max-width: 11ch;
-    font-size: clamp(2.05rem, 8.2vw, 2.9rem);
+    max-width: min(100%, 11.5ch);
+    font-size: clamp(2rem, 7vw, 2.55rem);
     line-height: 1.1;
+    overflow-wrap: break-word;
   }
 
   .hero-badge {
+    display: inline-block;
+    max-width: 100%;
     min-height: 32px;
     padding: 0.5rem 0.8rem;
     margin-bottom: 1.1rem;
-    font-size: 0.76rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.075em;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+    text-align: left;
+    white-space: normal;
+    word-break: break-word;
   }
 
   .hero-text {
@@ -1231,6 +1308,8 @@ main,
     width: 100%;
     max-width: 100%;
     min-height: 50px;
+    text-align: center;
+    white-space: normal;
   }
 
   .about-grid,
@@ -1251,8 +1330,11 @@ main,
   .contact-copy h2 {
     font-size: clamp(1.75rem, 7vw, 2.35rem);
     line-height: 1.12;
+    max-width: 100%;
+    overflow-wrap: break-word;
   }
 
+  .card-grid,
   .services-grid,
   .sectors-grid,
   .reasons-grid {
@@ -1281,6 +1363,8 @@ main,
 
   .visual-display,
   .sector-visual {
+    width: 100%;
+    max-width: 100%;
     min-height: 0;
     aspect-ratio: 16 / 10;
   }
@@ -1296,6 +1380,22 @@ main,
   .sector-visual,
   .contact-card {
     overflow: hidden;
+  }
+
+  .visual-panel {
+    padding: 0.85rem;
+  }
+
+  .visual-panel-shell {
+    padding: 0.9rem;
+  }
+
+  .media-card-image {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    object-fit: cover;
+    transform: none;
   }
 
   .contact-note {
@@ -1362,15 +1462,18 @@ main,
   }
 
   .hero h1 {
-    max-width: 10.5ch;
-    font-size: clamp(1.95rem, 9.2vw, 2.45rem);
+    max-width: min(100%, 11ch);
+    font-size: clamp(1.88rem, 8vw, 2.18rem);
     text-wrap: pretty;
   }
 
   .hero-badge {
+    display: block;
     width: 100%;
     justify-content: center;
-    padding-inline: 0.65rem;
+    padding-inline: 0.7rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.035em;
     text-align: center;
     line-height: 1.35;
   }
@@ -1384,12 +1487,27 @@ main,
     margin-bottom: 1.7rem;
   }
 
+  .section-heading h2,
+  .about-copy h2,
+  .contact-copy h2 {
+    font-size: clamp(1.65rem, 6.5vw, 2.05rem);
+  }
+
   .visual-panel,
   .info-card,
   .sector-card,
   .reason-card,
   .contact-card {
     border-radius: 22px;
+  }
+
+  .visual-panel {
+    padding: 0.65rem;
+  }
+
+  .visual-panel-shell {
+    gap: 0.75rem;
+    padding: 0.7rem;
   }
 
   .visual-display,
@@ -1419,6 +1537,20 @@ main,
 
   .footer {
     padding: 1.35rem 0 1.85rem;
+  }
+
+  .brand-text small {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-wrapper {
+    min-height: 70px;
+  }
+
+  .hero h1 {
+    font-size: 1.85rem;
   }
 }
 

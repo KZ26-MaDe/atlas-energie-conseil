@@ -13,6 +13,18 @@ Le format suit une logique simple inspirée de Keep a Changelog et du versioning
 - Ajout éventuel d’un staging automatisé
 - Vérifications Lighthouse / performance plus poussées
 
+## [1.0.2] - 2026-04-28
+
+Mobile Polish & Production Stabilization pour renforcer la qualité responsive de la version live.
+
+### Fixed
+
+- Fixed remaining mobile horizontal overflow risks
+- Fixed Hero mobile framing and text bounds
+- Fixed responsive media cards for `Vision projet` and `Secteurs cibles`
+- Improved mobile card grids, CTA wrapping and header stability
+- Verified image and video containers across mobile, tablet and desktop widths
+
 ## [1.0.1] - 2026-04-27
 
 Hotfix mobile de production pour corriger les débordements horizontaux et stabiliser la mise en page responsive.
