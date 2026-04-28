@@ -115,6 +115,7 @@ section,
 .sectors-layout,
 .sectors-showcase,
 .services-grid,
+.situations-grid,
 .sectors-grid,
 .reasons-grid,
 .hero-copy,
@@ -122,6 +123,7 @@ section,
 .hero-text,
 .hero-actions,
 .button,
+.section-cta,
 .section-heading,
 .about-copy,
 .contact-copy,
@@ -132,6 +134,7 @@ section,
 .visual-display,
 .sector-visual,
 .media-card,
+.situation-card,
 .info-card,
 .sector-card,
 .reason-card,
@@ -156,6 +159,7 @@ section,
 .sector-visual,
 .media-card,
 .media-card-image,
+.situation-card,
 .info-card,
 .sector-card,
 .reason-card,
@@ -499,6 +503,8 @@ section,
 .hero-text,
 .section-heading p,
 .about-copy p,
+.section-cta p,
+.situation-card p,
 .info-card p,
 .sector-card p,
 .reason-card p,
@@ -605,12 +611,17 @@ section,
   gap: var(--grid-gap);
 }
 
+.situations-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .services-grid,
 .sectors-grid,
 .reasons-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.situation-card,
 .info-card,
 .sector-card,
 .reason-card,
@@ -621,6 +632,7 @@ section,
   box-shadow: var(--shadow-panel);
 }
 
+.situation-card,
 .info-card,
 .sector-card,
 .reason-card {
@@ -651,6 +663,7 @@ section,
   font-weight: 700;
 }
 
+.situation-card h3,
 .info-card h3,
 .sector-card h3,
 .reason-card h3 {
@@ -660,10 +673,36 @@ section,
   overflow-wrap: break-word;
 }
 
+.situation-card p,
 .info-card p,
 .sector-card p,
 .reason-card p {
   margin: 0;
+}
+
+.section-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  width: min(100%, 820px);
+  margin: 2.15rem auto 0;
+  padding: 1rem;
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(135deg, rgba(127, 201, 181, 0.1), rgba(255, 255, 255, 0.018)),
+    rgba(9, 29, 25, 0.78);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.045),
+    var(--shadow-soft);
+}
+
+.section-cta p {
+  margin: 0;
+  color: rgba(245, 247, 243, 0.94);
+  font-weight: 700;
+  line-height: 1.45;
 }
 
 .about-grid {
@@ -854,6 +893,7 @@ section,
 
 .contact-item:hover,
 .contact-item:focus-visible,
+.situation-card:hover,
 .info-card:hover,
 .sector-card:hover,
 .reason-card:hover {
@@ -872,6 +912,7 @@ section,
   outline: none;
 }
 
+.situation-card:hover,
 .info-card:hover,
 .sector-card:hover,
 .reason-card:hover,
@@ -1045,6 +1086,7 @@ section,
     grid-template-columns: 1fr;
   }
 
+  .situations-grid,
   .services-grid,
   .reasons-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1128,11 +1170,14 @@ section,
   .hero-badge,
   .hero-actions,
   .button,
+  .section-cta,
   .section-heading,
   .card-grid,
+  .situations-grid,
   .services-grid,
   .sectors-grid,
   .reasons-grid,
+  .situation-card,
   .info-card,
   .sector-card,
   .reason-card,
@@ -1315,6 +1360,7 @@ section,
   .about-grid,
   .sectors-showcase,
   .contact-grid,
+  .situations-grid,
   .services-grid,
   .sectors-grid,
   .reasons-grid {
@@ -1335,6 +1381,7 @@ section,
   }
 
   .card-grid,
+  .situations-grid,
   .services-grid,
   .sectors-grid,
   .reasons-grid {
@@ -1343,6 +1390,8 @@ section,
 
   .section-heading p,
   .about-copy p,
+  .section-cta p,
+  .situation-card p,
   .info-card p,
   .sector-card p,
   .reason-card p,
@@ -1359,6 +1408,18 @@ section,
   .contact-item strong,
   .contact-item small {
     overflow-wrap: anywhere;
+  }
+
+  .section-cta {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 1.75rem;
+    padding: 0.95rem;
+    text-align: center;
+  }
+
+  .section-cta .button {
+    width: 100%;
   }
 
   .visual-display,
@@ -1408,6 +1469,7 @@ section,
   }
 
   .contact-item,
+  .situation-card,
   .info-card,
   .sector-card,
   .reason-card {
@@ -1494,6 +1556,7 @@ section,
   }
 
   .visual-panel,
+  .situation-card,
   .info-card,
   .sector-card,
   .reason-card,
@@ -1515,6 +1578,7 @@ section,
     aspect-ratio: 4 / 3;
   }
 
+  .situation-card,
   .info-card,
   .sector-card,
   .reason-card,

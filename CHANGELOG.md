@@ -13,6 +13,22 @@ Le format suit une logique simple inspirée de Keep a Changelog et du versioning
 - Ajout éventuel d’un staging automatisé
 - Vérifications Lighthouse / performance plus poussées
 
+## [1.1.0] - 2026-04-28
+
+Lead Optimization pour améliorer la qualification des demandes entrantes et clarifier les situations d’intervention.
+
+### Added
+
+- Added the `Les situations où nous intervenons` section after the Hero
+- Added decision-oriented cards for cost, profitability, storage, resilience, investment and independent review needs
+- Added a dedicated call to action toward the contact section after the new situations section
+
+### Improved
+
+- Improved Hero positioning for industrial companies, tertiary sites, developers and investors
+- Improved CTA guidance from Hero to the new situations section and contact area
+- Improved contact intro copy for a more direct and confidential qualification path
+
 ## [1.0.2] - 2026-04-28
 
 Mobile Polish & Production Stabilization pour renforcer la qualité responsive de la version live.
