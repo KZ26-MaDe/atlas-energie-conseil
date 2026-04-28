@@ -128,6 +128,8 @@ section,
 .about-copy,
 .contact-copy,
 .about-pillars,
+.trust-list,
+.trust-item,
 .contact-stack,
 .visual-panel,
 .visual-panel-shell,
@@ -163,6 +165,8 @@ section,
 .info-card,
 .sector-card,
 .reason-card,
+.trust-list,
+.trust-item,
 .contact-card,
 .contact-item {
   max-width: 100%;
@@ -860,6 +864,33 @@ section,
   text-transform: uppercase;
 }
 
+.trust-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  max-width: 58ch;
+  margin: 1.55rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trust-item {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0.56rem 0.78rem;
+  border: 1px solid rgba(197, 239, 226, 0.13);
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, rgba(127, 201, 181, 0.075), rgba(255, 255, 255, 0.012)),
+    rgba(5, 17, 15, 0.48);
+  color: rgba(245, 247, 243, 0.92);
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.25;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
 .contact-card {
   padding: 1rem;
   display: grid;
@@ -1194,6 +1225,8 @@ section,
   .sector-visual,
   .contact-grid,
   .contact-copy,
+  .trust-list,
+  .trust-item,
   .contact-stack,
   .contact-card,
   .contact-item,
@@ -1462,6 +1495,18 @@ section,
   .contact-note {
     margin-top: 1.5rem;
     padding: 1.1rem 1rem 1.1rem 1.15rem;
+  }
+
+  .trust-list {
+    gap: 0.55rem;
+    margin-top: 1.25rem;
+  }
+
+  .trust-item {
+    flex: 1 1 calc(50% - 0.55rem);
+    justify-content: center;
+    text-align: center;
+    font-size: 0.78rem;
   }
 
   .contact-card {

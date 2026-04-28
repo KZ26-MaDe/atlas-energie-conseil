@@ -13,6 +13,23 @@ Le format suit une logique simple inspirée de Keep a Changelog et du versioning
 - Ajout éventuel d’un staging automatisé
 - Vérifications Lighthouse / performance plus poussées
 
+## [1.2.0] - 2026-04-28
+
+Contact & Trust Optimization pour renforcer la confiance et faciliter le premier échange qualifié.
+
+### Added
+
+- Added subtle trust elements in the contact area
+- Added prepared WhatsApp message for project inquiries
+- Added prepared email subject and body for first-contact requests
+- Added canonical URL and improved Open Graph / Twitter sharing metadata
+
+### Improved
+
+- Improved contact copy around confidential exchange, need qualification, priorities and concrete next steps
+- Verified LinkedIn profile link behavior with new-tab opening and secure `rel` attributes
+- Verified SEO / sharing basics using the existing Hero poster asset
+
 ## [1.1.1] - 2026-04-28
 
 Hotfix de production pour corriger le décalage de style observé en ligne sur la section Lead Optimization.
