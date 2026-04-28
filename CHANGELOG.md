@@ -13,6 +13,15 @@ Le format suit une logique simple inspirée de Keep a Changelog et du versioning
 - Ajout éventuel d’un staging automatisé
 - Vérifications Lighthouse / performance plus poussées
 
+## [1.1.1] - 2026-04-28
+
+Hotfix de production pour corriger le décalage de style observé en ligne sur la section Lead Optimization.
+
+### Fixed
+
+- Fixed online styling mismatch for the lead optimization situations section by versioning stylesheet assets
+- Versioned the JavaScript asset reference as a complementary cache-busting safeguard
+
 ## [1.1.0] - 2026-04-28
 
 Lead Optimization pour améliorer la qualification des demandes entrantes et clarifier les situations d’intervention.
