@@ -14,6 +14,13 @@ const diagnosticResult = document.querySelector("[data-diagnostic-result]");
 const diagnosticResultTitle = document.querySelector("[data-diagnostic-result-title]");
 const diagnosticResultText = document.querySelector("[data-diagnostic-result-text]");
 const diagnosticReset = document.querySelector("[data-diagnostic-reset]");
+const analyticsEventTargets = document.querySelectorAll("[data-analytics-event]");
+
+const trackAnalyticsEvent = (eventName) => {
+  if (typeof window.gtag === "function") {
+    window.gtag("event", eventName);
+  }
+};
 
 if (yearTarget) {
   yearTarget.textContent = new Date().getFullYear();
@@ -76,9 +83,19 @@ mediaImages.forEach((image) => {
   });
 });
 
+analyticsEventTargets.forEach((target) => {
+  target.addEventListener("click", () => {
+    const eventName = target.getAttribute("data-analytics-event");
+    if (eventName) {
+      trackAnalyticsEvent(eventName);
+    }
+  });
+});
+
 if (diagnosticForm && diagnosticQuestions.length > 0) {
   const answers = {};
   const totalQuestions = diagnosticQuestions.length;
+  let diagnosticCompletedTracked = false;
   const resultTypes = {
     analysis: {
       title: "Analyse énergétique recommandée",
@@ -171,6 +188,11 @@ if (diagnosticForm && diagnosticQuestions.length > 0) {
     diagnosticResultTitle.textContent = result.title;
     diagnosticResultText.textContent = result.text;
     diagnosticResult.hidden = false;
+
+    if (!diagnosticCompletedTracked) {
+      trackAnalyticsEvent("pre_diagnostic_completed");
+      diagnosticCompletedTracked = true;
+    }
   };
 
   diagnosticQuestions.forEach((question) => {
@@ -217,6 +239,7 @@ if (diagnosticForm && diagnosticQuestions.length > 0) {
       diagnosticResult.hidden = true;
     }
 
+    diagnosticCompletedTracked = false;
     updateProgress();
     diagnosticQuestions[0]?.querySelector("[data-diagnostic-option]")?.focus();
   });

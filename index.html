@@ -27,6 +27,13 @@
   <link rel="preload" as="image" href="assets/images/hero-poster.webp" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CKMCHRD1Q8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-CKMCHRD1Q8");
+  </script>
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
     rel="stylesheet"
@@ -109,7 +116,7 @@
               Atlas Energie Conseil accompagne les entreprises industrielles, sites tertiaires, développeurs et investisseurs dans l’analyse de rentabilité, la structuration technique et la sécurisation de leurs décisions énergétiques.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#contact">Parler de votre projet</a>
+              <a class="button button-primary" href="#contact" data-analytics-event="hero_cta_click">Parler de votre projet</a>
               <a class="button button-secondary" href="#situations">Voir les situations d’intervention</a>
             </div>
           </div>
@@ -162,7 +169,7 @@
 
           <div class="section-cta">
             <p>Vous avez une décision énergétique à sécuriser ?</p>
-            <a class="button button-primary" href="#contact">Demander un avis indépendant</a>
+            <a class="button button-primary" href="#contact" data-analytics-event="independent_advice_cta_click">Demander un avis indépendant</a>
           </div>
         </div>
       </section>
@@ -250,7 +257,7 @@
 
           <div class="section-cta">
             <p>Vous hésitez entre plusieurs scénarios ?</p>
-            <a class="button button-primary" href="#contact">Comparer les options avec un avis indépendant</a>
+            <a class="button button-primary" href="#contact" data-analytics-event="compare_options_cta_click">Comparer les options avec un avis indépendant</a>
           </div>
         </div>
       </section>
@@ -360,7 +367,7 @@
                   Un échange permet de vérifier les hypothèses et de cadrer les prochaines étapes.
                 </p>
                 <div class="diagnostic-result-actions">
-                  <a class="button button-primary" href="#contact">Discuter de cette orientation</a>
+                  <a class="button button-primary" href="#contact" data-analytics-event="pre_diagnostic_cta_click">Discuter de cette orientation</a>
                   <button class="button button-secondary" type="button" data-diagnostic-reset>Recommencer le pré-diagnostic</button>
                 </div>
               </div>
@@ -553,17 +560,17 @@
 
           <div class="contact-stack">
             <div class="contact-card">
-              <a href="mailto:contact@atlasenergieconseil.com?subject=Demande%20de%20premier%20%C3%A9change%20-%20Atlas%20Energie%20Conseil&body=Bonjour%2C%20je%20souhaite%20%C3%A9changer%20au%20sujet%20d%E2%80%99un%20projet%20%C3%A9nerg%C3%A9tique%20au%20Maroc.%0D%0A%0D%0AMerci%20de%20me%20recontacter." class="contact-item">
+              <a href="mailto:contact@atlasenergieconseil.com?subject=Demande%20de%20premier%20%C3%A9change%20-%20Atlas%20Energie%20Conseil&body=Bonjour%2C%20je%20souhaite%20%C3%A9changer%20au%20sujet%20d%E2%80%99un%20projet%20%C3%A9nerg%C3%A9tique%20au%20Maroc.%0D%0A%0D%0AMerci%20de%20me%20recontacter." class="contact-item" data-analytics-event="contact_email_click">
                 <span class="contact-item-kicker">Email</span>
                 <strong>contact@atlasenergieconseil.com</strong>
                 <small>Pour présenter votre contexte et préparer un premier échange structuré.</small>
               </a>
-              <a href="https://wa.me/4915788152561?text=Bonjour%2C%20je%20souhaite%20%C3%A9changer%20au%20sujet%20d%E2%80%99un%20projet%20%C3%A9nerg%C3%A9tique%20%2F%20solaire%20%2F%20stockage%20au%20Maroc." target="_blank" rel="noopener noreferrer" class="contact-item">
+              <a href="https://wa.me/4915788152561?text=Bonjour%2C%20je%20souhaite%20%C3%A9changer%20au%20sujet%20d%E2%80%99un%20projet%20%C3%A9nerg%C3%A9tique%20%2F%20solaire%20%2F%20stockage%20au%20Maroc." target="_blank" rel="noopener noreferrer" class="contact-item" data-analytics-event="contact_whatsapp_click">
                 <span class="contact-item-kicker">WhatsApp</span>
                 <strong>+49 157 88152561</strong>
                 <small>Pour initier rapidement une discussion avec un message déjà préparé.</small>
               </a>
-              <a href="https://www.linkedin.com/in/khalid-zergoun-a361421a6/" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <a href="https://www.linkedin.com/in/khalid-zergoun-a361421a6/" target="_blank" rel="noopener noreferrer" class="contact-item" data-analytics-event="contact_linkedin_click">
                 <span class="contact-item-kicker">LinkedIn</span>
                 <strong>Khalid Zergoun</strong>
                 <small>Profil professionnel et réseau de référence.</small>
@@ -608,6 +615,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=1.4.0"></script>
+  <script src="script.js?v=1.4.1"></script>
 </body>
 </html>

@@ -13,6 +13,20 @@ Le format suit une logique simple inspirée de Keep a Changelog et du versioning
 - Ajout éventuel d’un staging automatisé
 - Vérifications Lighthouse / performance plus poussées
 
+## [1.4.1] - 2026-04-29
+
+Google Analytics 4 Setup pour mesurer les visites, les sources de trafic, les appareils et les actions clés.
+
+### Added
+
+- Added Google Analytics 4 tracking with Measurement ID `G-CKMCHRD1Q8`
+- Added CTA click event tracking
+- Added pre-diagnostic completion tracking
+
+### Verified
+
+- Verified contact links and diagnostic flow
+
 ## [1.4.0] - 2026-04-29
 
 Pré-diagnostic énergétique pour orienter les visiteurs et préparer un premier échange qualifié sans simulation technique.
