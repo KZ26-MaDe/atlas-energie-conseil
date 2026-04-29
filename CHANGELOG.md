@@ -13,6 +13,22 @@ Le format suit une logique simple inspirée de Keep a Changelog et du versioning
 - Ajout éventuel d’un staging automatisé
 - Vérifications Lighthouse / performance plus poussées
 
+## [1.4.0] - 2026-04-29
+
+Pré-diagnostic énergétique pour orienter les visiteurs et préparer un premier échange qualifié sans simulation technique.
+
+### Added
+
+- Added the `Pré-diagnostic énergétique` lead generator section
+- Added 7 multiple-choice questions to clarify site type, objective, consumption profile, battery interest, continuity needs and project stage
+- Added indicative client-side result logic for energy analysis, PV, PV + battery, resilience / backup and first-exchange orientations
+- Added a result CTA toward the contact section and a reset action
+
+### Improved
+
+- Improved mobile and responsive presentation for the new diagnostic card
+- Added clear wording that the diagnostic is indicative and does not replace a technical or financial study
+
 ## [1.2.0] - 2026-04-28
 
 Contact & Trust Optimization pour renforcer la confiance et faciliter le premier échange qualifié.

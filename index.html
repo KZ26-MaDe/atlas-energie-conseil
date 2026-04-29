@@ -31,7 +31,7 @@
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
     rel="stylesheet"
   >
-  <link rel="stylesheet" href="style.css?v=1.3.0">
+  <link rel="stylesheet" href="style.css?v=1.4.0">
 </head>
 <body>
   <div class="site-shell">
@@ -251,6 +251,120 @@
           <div class="section-cta">
             <p>Vous hésitez entre plusieurs scénarios ?</p>
             <a class="button button-primary" href="#contact">Comparer les options avec un avis indépendant</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt pre-diagnostic-section" id="pre-diagnostic" aria-labelledby="pre-diagnostic-title">
+        <div class="container">
+          <div class="diagnostic-panel">
+            <div class="diagnostic-copy">
+              <p class="eyebrow">Pré-diagnostic énergétique</p>
+              <h2 id="pre-diagnostic-title">Clarifier votre besoin en quelques questions</h2>
+              <p>
+                Répondez à quelques questions simples pour identifier le scénario à approfondir.
+                Ce pré-diagnostic ne remplace pas une étude technique : il sert à préparer un premier échange structuré et indépendant.
+              </p>
+              <div class="diagnostic-assurance">
+                <span>Orientation indicative</span>
+                <p>Aucune donnée personnelle n’est demandée, aucune réponse n’est enregistrée et aucun résultat ne constitue une garantie technique ou financière.</p>
+              </div>
+            </div>
+
+            <div class="diagnostic-workspace">
+              <div class="diagnostic-progress" aria-live="polite">
+                <span data-diagnostic-progress>0 / 7 questions complétées</span>
+              </div>
+
+              <form class="diagnostic-form" data-diagnostic-form>
+                <fieldset class="diagnostic-question" data-diagnostic-question="site">
+                  <legend>Quel type de site souhaitez-vous analyser ?</legend>
+                  <div class="diagnostic-options">
+                    <button type="button" data-diagnostic-option data-value="industrial">Site industriel</button>
+                    <button type="button" data-diagnostic-option data-value="tertiary">Immobilier & tertiaire</button>
+                    <button type="button" data-diagnostic-option data-value="logistics">Logistique & infrastructures</button>
+                    <button type="button" data-diagnostic-option data-value="investor">Développeur / investisseur</button>
+                    <button type="button" data-diagnostic-option data-value="sensitive">Site sensible ou isolé</button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="diagnostic-question" data-diagnostic-question="objective">
+                  <legend>Quel est votre objectif principal ?</legend>
+                  <div class="diagnostic-options">
+                    <button type="button" data-diagnostic-option data-value="cost">Réduire la facture électrique</button>
+                    <button type="button" data-diagnostic-option data-value="solar">Évaluer un projet solaire</button>
+                    <button type="button" data-diagnostic-option data-value="battery">Comparer l’intérêt d’une batterie</button>
+                    <button type="button" data-diagnostic-option data-value="backup">Sécuriser l’alimentation</button>
+                    <button type="button" data-diagnostic-option data-value="investment">Préparer un investissement</button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="diagnostic-question" data-diagnostic-question="bill">
+                  <legend>Comment décririez-vous votre facture électrique ?</legend>
+                  <div class="diagnostic-options">
+                    <button type="button" data-diagnostic-option data-value="high">Élevée ou en hausse</button>
+                    <button type="button" data-diagnostic-option data-value="stable">Stable mais à optimiser</button>
+                    <button type="button" data-diagnostic-option data-value="unknown">Pas encore analysée</button>
+                    <button type="button" data-diagnostic-option data-value="confirm">Information à confirmer</button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="diagnostic-question" data-diagnostic-question="consumption">
+                  <legend>Votre consommation est-elle principalement… ?</legend>
+                  <div class="diagnostic-options">
+                    <button type="button" data-diagnostic-option data-value="day">En journée</button>
+                    <button type="button" data-diagnostic-option data-value="night">Le soir ou la nuit</button>
+                    <button type="button" data-diagnostic-option data-value="continuous">Continue / 24h</button>
+                    <button type="button" data-diagnostic-option data-value="variable">Variable ou inconnue</button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="diagnostic-question" data-diagnostic-question="battery">
+                  <legend>La batterie est-elle déjà envisagée ?</legend>
+                  <div class="diagnostic-options">
+                    <button type="button" data-diagnostic-option data-value="yes">Oui</button>
+                    <button type="button" data-diagnostic-option data-value="no">Non</button>
+                    <button type="button" data-diagnostic-option data-value="compare">À comparer</button>
+                    <button type="button" data-diagnostic-option data-value="unknown">Je ne sais pas encore</button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="diagnostic-question" data-diagnostic-question="continuity">
+                  <legend>La continuité d’alimentation est-elle critique ?</legend>
+                  <div class="diagnostic-options">
+                    <button type="button" data-diagnostic-option data-value="critical">Oui, critique</button>
+                    <button type="button" data-diagnostic-option data-value="important">Importante mais secondaire</button>
+                    <button type="button" data-diagnostic-option data-value="low">Non prioritaire</button>
+                    <button type="button" data-diagnostic-option data-value="clarify">À clarifier</button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="diagnostic-question" data-diagnostic-question="stage">
+                  <legend>Quel est le stade du projet ?</legend>
+                  <div class="diagnostic-options">
+                    <button type="button" data-diagnostic-option data-value="early">Première réflexion</button>
+                    <button type="button" data-diagnostic-option data-value="opportunity">Étude d’opportunité</button>
+                    <button type="button" data-diagnostic-option data-value="offers">Offres ou devis déjà reçus</button>
+                    <button type="button" data-diagnostic-option data-value="investment">Investissement à préparer</button>
+                    <button type="button" data-diagnostic-option data-value="optimization">Site existant à optimiser</button>
+                  </div>
+                </fieldset>
+              </form>
+
+              <div class="diagnostic-result" data-diagnostic-result hidden>
+                <span class="diagnostic-result-kicker">Orientation indicative</span>
+                <h3 data-diagnostic-result-title></h3>
+                <p data-diagnostic-result-text></p>
+                <p class="diagnostic-result-note">
+                  Cette orientation est indicative. Elle ne constitue pas une étude technique ou financière complète.
+                  Un échange permet de vérifier les hypothèses et de cadrer les prochaines étapes.
+                </p>
+                <div class="diagnostic-result-actions">
+                  <a class="button button-primary" href="#contact">Discuter de cette orientation</a>
+                  <button class="button button-secondary" type="button" data-diagnostic-reset>Recommencer le pré-diagnostic</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -494,6 +608,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=1.2.0"></script>
+  <script src="script.js?v=1.4.0"></script>
 </body>
 </html>
