@@ -4,9 +4,9 @@ Site one-page premium en `HTML`, `CSS` et `JavaScript` pour Atlas Energie Consei
 
 ## Version actuelle
 
-La version de référence actuelle est `v1.4.1`.
+La version de référence actuelle est `v1.5.0`.
 
-Cette version ajoute Google Analytics 4 et le suivi des clics CTA afin de mieux comprendre les parcours de contact et l’usage du pré-diagnostic.
+Cette version ajoute les fondations SEO, `robots.txt`, `sitemap.xml` et la préparation à l’indexation via Google Search Console.
 
 ## Stack
 
@@ -60,7 +60,7 @@ Exemples :
 7. Préparer la release et les notes de version.
 8. Fusionner `develop` dans `main`.
 9. Déployer `main` en production.
-10. Taguer la release, par exemple `v1.4.1`.
+10. Taguer la release, par exemple `v1.5.0`.
 
 ## Déploiement
 
@@ -83,6 +83,6 @@ Le projet est statique et peut être déployé facilement sur :
 Créer le dépôt Git/GitHub puis :
 
 1. commit du site actuel
-2. tag `v1.4.1`
+2. tag `v1.5.0`
 3. création de `develop`
 4. démarrage des futures évolutions sur `feature/*`

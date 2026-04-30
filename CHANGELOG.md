@@ -13,6 +13,21 @@ Le format suit une logique simple inspirée de Keep a Changelog et du versioning
 - Ajout éventuel d’un staging automatisé
 - Vérifications Lighthouse / performance plus poussées
 
+## [1.5.0] - 2026-04-30
+
+SEO & Google Search Console Setup pour préparer le crawl et l’indexation de la one-page.
+
+### Added
+
+- Added `robots.txt`
+- Added `sitemap.xml`
+- Added structured data for Atlas Energie Conseil as a professional service
+
+### Improved
+
+- Improved SEO and social sharing metadata
+- Prepared Google Search Console indexing setup
+
 ## [1.4.1] - 2026-04-29
 
 Google Analytics 4 Setup pour mesurer les visites, les sources de trafic, les appareils et les actions clés.
