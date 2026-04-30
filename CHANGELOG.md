@@ -13,6 +13,19 @@ Le format suit une logique simple inspirée de Keep a Changelog et du versioning
 - Ajout éventuel d’un staging automatisé
 - Vérifications Lighthouse / performance plus poussées
 
+## [1.6.1] - 2026-04-30
+
+Indexing & Analytics Review pour documenter le contrôle technique SEO, tracking et stabilité responsive.
+
+### Verified
+
+- Completed indexing and analytics review
+- Verified GA4 tracking and CTA events
+- Verified `robots.txt` and `sitemap.xml`
+- Verified FAQPage and ProfessionalService JSON-LD
+- Verified responsive behavior and no horizontal overflow
+- No code fixes required
+
 ## [1.6.0] - 2026-04-30
 
 FAQ & SEO Content pour renforcer la compréhension des sujets énergie, solaire photovoltaïque, stockage batterie, autoconsommation, backup et analyse énergétique au Maroc.
