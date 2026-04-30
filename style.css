@@ -113,6 +113,7 @@ section,
 .about-grid,
 .contact-grid,
 .diagnostic-panel,
+.faq-layout,
 .sectors-layout,
 .sectors-showcase,
 .services-grid,
@@ -150,6 +151,9 @@ section,
 .diagnostic-options,
 .diagnostic-result,
 .diagnostic-result-actions,
+.faq-heading,
+.faq-list,
+.faq-item,
 .info-card,
 .sector-card,
 .reason-card,
@@ -180,6 +184,7 @@ section,
 .system-chip,
 .system-detail,
 .diagnostic-panel,
+.faq-layout,
 .diagnostic-copy,
 .diagnostic-workspace,
 .diagnostic-form,
@@ -187,6 +192,9 @@ section,
 .diagnostic-options,
 .diagnostic-result,
 .diagnostic-result-actions,
+.faq-heading,
+.faq-list,
+.faq-item,
 .info-card,
 .sector-card,
 .reason-card,
@@ -539,6 +547,7 @@ section,
 .diagnostic-question legend,
 .diagnostic-options button,
 .diagnostic-result p,
+.faq-item p,
 .situation-card p,
 .system-card p,
 .info-card p,
@@ -667,6 +676,7 @@ section,
 .info-card,
 .sector-card,
 .reason-card,
+.faq-item,
 .contact-card,
 .visual-panel {
   border: 1px solid var(--surface-border);
@@ -986,6 +996,114 @@ section,
   flex-wrap: wrap;
   gap: 0.8rem;
   margin-top: 0.35rem;
+}
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(2rem, 4vw, 4.4rem);
+  align-items: start;
+}
+
+.faq-heading {
+  margin-bottom: 0;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.faq-item {
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(145deg, rgba(127, 201, 181, 0.055), rgba(255, 255, 255, 0.012)),
+    rgba(10, 31, 28, 0.78);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    var(--shadow-soft);
+  overflow: hidden;
+  transition:
+    border-color var(--transition),
+    background var(--transition),
+    box-shadow var(--transition),
+    transform var(--transition);
+}
+
+.faq-item:hover,
+.faq-item:focus-within,
+.faq-item[open] {
+  border-color: rgba(197, 239, 226, 0.2);
+  background:
+    linear-gradient(145deg, rgba(127, 201, 181, 0.08), rgba(255, 255, 255, 0.016)),
+    rgba(11, 36, 32, 0.9);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    var(--shadow-panel);
+}
+
+.faq-item:hover {
+  transform: translateY(-1px);
+}
+
+.faq-item summary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 72px;
+  padding: 1.25rem 1.35rem;
+  color: rgba(245, 247, 243, 0.96);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: clamp(1rem, 1.3vw, 1.12rem);
+  font-weight: 800;
+  line-height: 1.38;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  list-style: none;
+  overflow-wrap: anywhere;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(197, 239, 226, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.024);
+  color: var(--accent-strong);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  transition:
+    transform var(--transition),
+    background var(--transition),
+    border-color var(--transition);
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+  border-color: rgba(197, 239, 226, 0.26);
+  background: rgba(127, 201, 181, 0.12);
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 1.35rem 1.35rem;
+  max-width: 70ch;
+  color: var(--muted);
+  line-height: 1.72;
+  overflow-wrap: anywhere;
 }
 
 .section-cta {
@@ -1509,6 +1627,10 @@ section,
   .button,
   .section-cta,
   .section-heading,
+  .faq-layout,
+  .faq-heading,
+  .faq-list,
+  .faq-item,
   .card-grid,
   .situations-grid,
   .systems-grid,
@@ -1710,6 +1832,7 @@ section,
   }
 
   .about-grid,
+  .faq-layout,
   .diagnostic-panel,
   .sectors-showcase,
   .contact-grid,
@@ -1728,6 +1851,7 @@ section,
   .section-heading h2,
   .about-copy h2,
   .diagnostic-copy h2,
+  .faq-heading h2,
   .contact-copy h2 {
     font-size: clamp(1.75rem, 7vw, 2.35rem);
     line-height: 1.12;
@@ -1736,6 +1860,7 @@ section,
   }
 
   .card-grid,
+  .faq-list,
   .situations-grid,
   .systems-grid,
   .services-grid,
@@ -1751,6 +1876,7 @@ section,
   .diagnostic-question legend,
   .diagnostic-options button,
   .diagnostic-result p,
+  .faq-item p,
   .situation-card p,
   .system-card p,
   .info-card p,
@@ -1766,6 +1892,7 @@ section,
   .about-copy p,
   .diagnostic-copy p,
   .diagnostic-result p,
+  .faq-item p,
   .contact-copy p,
   .contact-note p,
   .contact-item strong,
@@ -1806,6 +1933,25 @@ section,
 
   .diagnostic-result-actions > * {
     width: 100%;
+  }
+
+  .faq-layout {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .faq-heading {
+    margin-bottom: 0;
+  }
+
+  .faq-item summary {
+    min-height: 64px;
+    padding: 1.1rem;
+    font-size: 1rem;
+  }
+
+  .faq-item p {
+    padding: 0 1.1rem 1.15rem;
   }
 
   .section-cta {
@@ -1881,6 +2027,7 @@ section,
   .contact-item,
   .situation-card,
   .system-card,
+  .faq-item,
   .info-card,
   .sector-card,
   .reason-card {
@@ -1963,6 +2110,7 @@ section,
   .section-heading h2,
   .about-copy h2,
   .diagnostic-copy h2,
+  .faq-heading h2,
   .contact-copy h2 {
     font-size: clamp(1.65rem, 6.5vw, 2.05rem);
   }
@@ -1973,6 +2121,7 @@ section,
   .diagnostic-panel,
   .diagnostic-workspace,
   .diagnostic-result,
+  .faq-item,
   .info-card,
   .sector-card,
   .reason-card,
@@ -1997,6 +2146,7 @@ section,
   .situation-card,
   .system-card,
   .diagnostic-question,
+  .faq-item summary,
   .info-card,
   .sector-card,
   .reason-card,

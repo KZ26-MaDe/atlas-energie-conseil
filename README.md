@@ -4,9 +4,9 @@ Site one-page premium en `HTML`, `CSS` et `JavaScript` pour Atlas Energie Consei
 
 ## Version actuelle
 
-La version de référence actuelle est `v1.5.0`.
+La version de référence actuelle est `v1.6.0`.
 
-Cette version ajoute les fondations SEO, `robots.txt`, `sitemap.xml` et la préparation à l’indexation via Google Search Console.
+Cette version ajoute une FAQ éditoriale et du contenu SEO visible autour de l’énergie, du solaire, du stockage et du conseil indépendant.
 
 ## Stack
 
@@ -60,7 +60,7 @@ Exemples :
 7. Préparer la release et les notes de version.
 8. Fusionner `develop` dans `main`.
 9. Déployer `main` en production.
-10. Taguer la release, par exemple `v1.5.0`.
+10. Taguer la release, par exemple `v1.6.0`.
 
 ## Déploiement
 
