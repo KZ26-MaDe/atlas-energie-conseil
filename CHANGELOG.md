@@ -13,6 +13,24 @@ Le format suit une logique simple inspirée de Keep a Changelog et du versioning
 - Ajout éventuel d’un staging automatisé
 - Vérifications Lighthouse / performance plus poussées
 
+## [1.8.0] - 2026-05-05
+
+PDF Checklist / Download Asset pour préparer un support professionnel de lead magnet autour des décisions solaire, stockage et hybride.
+
+### Added
+
+- Added PDF checklist asset
+- Added editable checklist source file
+
+### Maintained
+
+- Kept website lead-magnet CTA on WhatsApp/email request
+- No direct public download CTA added
+
+### Verified
+
+- Verified PDF availability and existing lead flow
+
 ## [1.7.1] - 2026-05-05
 
 Lead Magnet Tracking & QA Review pour documenter la validation technique de la section checklist et de ses actions de contact.
