@@ -13,6 +13,22 @@ Le format suit une logique simple inspirée de Keep a Changelog et du versioning
 - Ajout éventuel d’un staging automatisé
 - Vérifications Lighthouse / performance plus poussées
 
+## [1.7.0] - 2026-05-05
+
+Lead Magnet & Content Offer pour proposer une checklist de décision avant investissement solaire, stockage ou hybride.
+
+### Added
+
+- Added checklist lead-magnet section
+- Added WhatsApp checklist request CTA
+- Added email checklist request CTA
+- Added checklist preview content
+- Added GA4 tracking attributes for checklist CTAs
+
+### Verified
+
+- Verified responsive behavior
+
 ## [1.6.1] - 2026-04-30
 
 Indexing & Analytics Review pour documenter le contrôle technique SEO, tracking et stabilité responsive.
