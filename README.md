@@ -4,9 +4,9 @@ Site one-page premium en `HTML`, `CSS` et `JavaScript` pour Atlas Energie Consei
 
 ## Version actuelle
 
-La version de référence actuelle est `v1.7.0`.
+La version de référence actuelle est `v1.7.1`.
 
-Cette version ajoute une section lead magnet pour demander une checklist via WhatsApp ou email avant d’investir dans un projet solaire ou stockage.
+Cette version documente le Lead Magnet Tracking & QA Review : les CTAs WhatsApp et email de la checklist, le tracking GA4, la stabilité responsive, la FAQ, le pré-diagnostic et les liens de contact ont été vérifiés.
 
 ## Stack
 
@@ -60,7 +60,7 @@ Exemples :
 7. Préparer la release et les notes de version.
 8. Fusionner `develop` dans `main`.
 9. Déployer `main` en production.
-10. Taguer la release, par exemple `v1.7.0`.
+10. Taguer la release, par exemple `v1.7.1`.
 
 ## Déploiement
 
