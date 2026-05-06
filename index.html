@@ -35,7 +35,7 @@
     gtag("js", new Date());
     gtag("config", "G-CKMCHRD1Q8");
   </script>
-  <script type="application/ld+json">
+  <script type="application/ld+json" id="schema-professional-service">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
@@ -52,7 +52,7 @@
       ]
     }
   </script>
-  <script type="application/ld+json">
+  <script type="application/ld+json" id="schema-faq">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -144,7 +144,7 @@
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
     rel="stylesheet"
   >
-  <link rel="stylesheet" href="style.css?v=1.7.0">
+  <link rel="stylesheet" href="style.css?v=1.9.1">
 </head>
 <body>
   <div class="site-shell">
@@ -159,6 +159,13 @@
             <small>Conseil énergétique, solaire et stockage</small>
           </span>
         </a>
+
+        <div class="language-switcher" aria-label="Choisir la langue" data-i18n-attr="aria-label:language.aria">
+          <button type="button" data-language-option="fr" aria-pressed="true">FR</button>
+          <button type="button" data-language-option="en" aria-pressed="false">EN</button>
+          <button type="button" data-language-option="ar" aria-pressed="false">AR</button>
+          <button type="button" data-language-option="es" aria-pressed="false">ES</button>
+        </div>
 
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir la navigation">
           <span></span>
@@ -821,6 +828,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=1.4.1"></script>
+  <script src="script.js?v=1.9.1"></script>
 </body>
 </html>

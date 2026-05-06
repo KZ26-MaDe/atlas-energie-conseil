@@ -1,0 +1,275 @@
+{
+  "language": {
+    "code": "en",
+    "dir": "ltr",
+    "aria": "Choose language"
+  },
+  "meta": {
+    "title": "Atlas Energie Conseil | Independent solar and storage advisory in Morocco",
+    "description": "Atlas Energie Conseil supports companies in Morocco with profitability analysis, solar, storage and secure energy decision-making.",
+    "socialTitle": "Atlas Energie Conseil | Independent solar and storage advisory in Morocco",
+    "socialDescription": "Independent energy advisory for companies, developers and investors in Morocco: solar, storage, profitability and structured decisions.",
+    "imageAlt": "Solar plant and energy storage in Morocco",
+    "locale": "en_US"
+  },
+  "links": {
+    "contactEmailHref": "mailto:contact@atlasenergieconseil.com?subject=First%20exchange%20request%20-%20Atlas%20Energie%20Conseil&body=Hello%2C%20I%20would%20like%20to%20discuss%20an%20energy%20project%20in%20Morocco.%0D%0A%0D%0APlease%20contact%20me.",
+    "contactWhatsappHref": "https://wa.me/4915788152561?text=Hello%2C%20I%20would%20like%20to%20discuss%20an%20energy%20%2F%20solar%20%2F%20storage%20project%20in%20Morocco.",
+    "checklistEmailHref": "mailto:contact@atlasenergieconseil.com?subject=Checklist%20request%20-%20Atlas%20Energie%20Conseil&body=Hello%2C%0D%0A%0D%0AI%20would%20like%20to%20receive%20the%20checklist%20before%20investing%20in%20a%20solar%20or%20storage%20project%20in%20Morocco.%0D%0A%0D%0APlease%20contact%20me.",
+    "checklistWhatsappHref": "https://wa.me/4915788152561?text=Hello%2C%20I%20would%20like%20to%20receive%20the%20checklist%20before%20investing%20in%20a%20solar%20or%20storage%20project%20in%20Morocco."
+  },
+  "dom": {
+    "text": {
+      ".skip-link": "Skip to main content",
+      ".brand-text small": "Energy, solar and storage advisory",
+      ".nav a[href='#services']": "Services",
+      ".nav a[href='#apropos']": "About",
+      ".nav a[href='#secteurs']": "Sectors",
+      ".nav a[href='#avantages']": "Why choose us",
+      ".nav a[href='#contact']": "Contact",
+      ".hero-badge": "Independent advisory • Solar • Storage • Morocco",
+      "#hero-title": "Secure your solar, storage and energy performance decisions in Morocco",
+      ".hero-copy > p:not(.hero-badge)": "Atlas Energie Conseil supports industrial companies, tertiary sites, developers and investors with profitability analysis, technical structuring and secure energy decision-making.",
+      ".hero-actions .button-primary": "Discuss your project",
+      ".hero-actions .button-secondary": "View intervention situations",
+      "#situations .eyebrow": "Your energy challenges",
+      "#situations-title": "Situations where we intervene",
+      "#situations .section-heading p:not(.eyebrow)": "We intervene when an energy decision must be clarified before committing budgets, partners or a deployment timeline.",
+      "#situations .section-cta p": "Do you have an energy decision to secure?",
+      "#situations .section-cta .button": "Request an independent opinion",
+      "#systemes .eyebrow": "Decision scenarios",
+      "#systemes-title": "Which system fits your site?",
+      "#systemes .section-heading p:not(.eyebrow)": "Every site has a different consumption profile, risk level and investment logic. Atlas Energie Conseil helps you compare scenarios before committing to a technical or financial solution.",
+      "#systemes .section-cta p": "Are you hesitating between several scenarios?",
+      "#systemes .section-cta .button": "Compare options with independent advice",
+      "#pre-diagnostic .diagnostic-copy .eyebrow": "Energy pre-diagnostic",
+      "#pre-diagnostic-title": "Clarify your need in a few questions",
+      "#pre-diagnostic .diagnostic-copy > p:not(.eyebrow)": "Answer a few simple questions to identify the scenario worth exploring. This pre-diagnostic does not replace a technical study: it prepares a structured and independent first discussion.",
+      ".diagnostic-assurance span": "Indicative orientation",
+      ".diagnostic-assurance p": "No personal data is requested, no answer is stored and no result constitutes a technical or financial guarantee.",
+      ".diagnostic-result-kicker": "Indicative orientation",
+      ".diagnostic-result-note": "This orientation is indicative. It is not a complete technical or financial study. A discussion helps verify assumptions and frame the next steps.",
+      ".diagnostic-result-actions .button-primary": "Discuss this orientation",
+      "[data-diagnostic-reset]": "Restart the pre-diagnostic",
+      "#services .eyebrow": "Services",
+      "#services-title": "Technical and strategic advisory for your energy projects",
+      "#apropos .eyebrow": "About",
+      "#apropos-title": "An independent approach to structure the right energy decisions.",
+      "#secteurs .eyebrow": "Target sectors",
+      "#secteurs-title": "Environments where energy becomes a competitiveness lever.",
+      "#avantages .eyebrow": "Why choose us",
+      "#avantages-title": "A clear method to turn energy into a controlled decision.",
+      "#faq .eyebrow": "Energy & decision FAQ",
+      "#faq-title": "Key questions before deciding",
+      "#faq .section-heading p:not(.eyebrow)": "Before committing to a solar, storage or hybrid project, some questions must be clarified. These answers help you understand the stakes before a first discussion.",
+      "#checklist .eyebrow": "Decision resource",
+      "#checklist-title": "Receive the checklist before investing",
+      "#checklist .checklist-copy > p:not(.eyebrow):not(.checklist-note)": "A concise checklist to identify the points to clarify before comparing solar, storage or hybrid offers in Morocco. It does not replace a technical study, but helps prepare a more structured decision.",
+      "#checklist .button-primary": "Request the checklist",
+      "#checklist .checklist-email-link": "Receive by email",
+      "#checklist .checklist-note": "Available by WhatsApp or email after a first message. No complex form for now.",
+      "#checklist .checklist-preview h3": "What the checklist helps you clarify",
+      "#contact .eyebrow": "Contact",
+      "#contact-title": "Clarify your energy decision with a confidential first exchange.",
+      "#contact .contact-copy > p:not(.eyebrow)": "A confidential exchange to qualify your need, clarify priorities and define concrete next steps.",
+      ".contact-note-label": "First exchange",
+      ".contact-note p": "A direct, confidential and decision-oriented framework to understand your context, constraints and the trade-offs to secure.",
+      ".footer-brand p": "Independent advisory in solar energy, storage and energy performance in Morocco.",
+      "#legal-title": "Legal notice",
+      "#privacy-title": "Privacy policy"
+    },
+    "attrs": {
+      ".nav-toggle": {
+        "aria-label": "Open navigation"
+      },
+      ".nav": {
+        "aria-label": "Main navigation"
+      },
+      ".faq-list": {
+        "aria-label": "Frequently asked questions about energy advisory, solar and storage"
+      },
+      ".checklist-preview": {
+        "aria-label": "Checklist preview"
+      },
+      ".legal-modal-close": {
+        "aria-label": "Close"
+      },
+      "meta[property='og:locale']": {
+        "content": "en_US"
+      },
+      "meta[name='description']": {
+        "content": "Atlas Energie Conseil supports companies in Morocco with profitability analysis, solar, storage and secure energy decision-making."
+      },
+      "meta[property='og:title']": {
+        "content": "Atlas Energie Conseil | Independent solar and storage advisory in Morocco"
+      },
+      "meta[property='og:description']": {
+        "content": "Independent energy advisory for companies, developers and investors in Morocco: solar, storage, profitability and structured decisions."
+      },
+      "meta[property='og:image:alt']": {
+        "content": "Solar plant and energy storage in Morocco"
+      },
+      "meta[name='twitter:title']": {
+        "content": "Atlas Energie Conseil | Independent solar and storage advisory in Morocco"
+      },
+      "meta[name='twitter:description']": {
+        "content": "Independent energy advisory for companies, developers and investors in Morocco: solar, storage, profitability and structured decisions."
+      },
+      "meta[name='twitter:image:alt']": {
+        "content": "Solar plant and energy storage in Morocco"
+      },
+      "#checklist .button-primary": {
+        "href": "https://wa.me/4915788152561?text=Hello%2C%20I%20would%20like%20to%20receive%20the%20checklist%20before%20investing%20in%20a%20solar%20or%20storage%20project%20in%20Morocco."
+      },
+      "#checklist .checklist-email-link": {
+        "href": "mailto:contact@atlasenergieconseil.com?subject=Checklist%20request%20-%20Atlas%20Energie%20Conseil&body=Hello%2C%0D%0A%0D%0AI%20would%20like%20to%20receive%20the%20checklist%20before%20investing%20in%20a%20solar%20or%20storage%20project%20in%20Morocco.%0D%0A%0D%0APlease%20contact%20me."
+      },
+      ".contact-card a[data-analytics-event='contact_email_click']": {
+        "href": "mailto:contact@atlasenergieconseil.com?subject=First%20exchange%20request%20-%20Atlas%20Energie%20Conseil&body=Hello%2C%20I%20would%20like%20to%20discuss%20an%20energy%20project%20in%20Morocco.%0D%0A%0D%0APlease%20contact%20me."
+      },
+      ".contact-card a[data-analytics-event='contact_whatsapp_click']": {
+        "href": "https://wa.me/4915788152561?text=Hello%2C%20I%20would%20like%20to%20discuss%20an%20energy%20%2F%20solar%20%2F%20storage%20project%20in%20Morocco."
+      }
+    }
+  },
+  "diagnostic": {
+    "progress": "{answered} / {total} questions completed",
+    "questions": {
+      "site": {
+        "label": "What type of site would you like to analyze?",
+        "options": {
+          "industrial": "Industrial site",
+          "tertiary": "Real estate & tertiary",
+          "logistics": "Logistics & infrastructure",
+          "investor": "Developer / investor",
+          "sensitive": "Sensitive or isolated site"
+        }
+      },
+      "objective": {
+        "label": "What is your main objective?",
+        "options": {
+          "cost": "Reduce the electricity bill",
+          "solar": "Assess a solar project",
+          "battery": "Compare the value of a battery",
+          "backup": "Secure power supply",
+          "investment": "Prepare an investment"
+        }
+      },
+      "bill": {
+        "label": "How would you describe your electricity bill?",
+        "options": {
+          "high": "High or increasing",
+          "stable": "Stable but to optimize",
+          "unknown": "Not yet analyzed",
+          "confirm": "Information to confirm"
+        }
+      },
+      "consumption": {
+        "label": "Is your consumption mainly…?",
+        "options": {
+          "day": "During the day",
+          "night": "Evening or night",
+          "continuous": "Continuous / 24h",
+          "variable": "Variable or unknown"
+        }
+      },
+      "battery": {
+        "label": "Is a battery already being considered?",
+        "options": {
+          "yes": "Yes",
+          "no": "No",
+          "compare": "To compare",
+          "unknown": "I do not know yet"
+        }
+      },
+      "continuity": {
+        "label": "Is supply continuity critical?",
+        "options": {
+          "critical": "Yes, critical",
+          "important": "Important but secondary",
+          "low": "Not a priority",
+          "clarify": "To clarify"
+        }
+      },
+      "stage": {
+        "label": "What is the project stage?",
+        "options": {
+          "early": "First reflection",
+          "opportunity": "Opportunity study",
+          "offers": "Offers or quotes already received",
+          "investment": "Investment to prepare",
+          "optimization": "Existing site to optimize"
+        }
+      }
+    },
+    "results": {
+      "analysis": {
+        "title": "Energy analysis recommended",
+        "text": "Your project would benefit from being framed by an independent energy analysis before comparing technical solutions."
+      },
+      "pv": {
+        "title": "PV without battery to study",
+        "text": "A photovoltaic scenario without battery could be a first option to study, especially if your consumption is naturally aligned with solar production."
+      },
+      "battery": {
+        "title": "PV + battery scenario to compare",
+        "text": "A PV + battery scenario deserves comparison, provided the real uses of storage, its sizing and its economic consistency are verified."
+      },
+      "backup": {
+        "title": "Resilience / backup to analyze",
+        "text": "Your priority appears linked to business continuity. An energy resilience and backup analysis is recommended before any decision."
+      },
+      "exchange": {
+        "title": "First exchange recommended",
+        "text": "A first exchange will help clarify assumptions, compare scenarios and prepare a more secure decision."
+      }
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "question": "When does a solar project become relevant for a company in Morocco?",
+        "answer": "A solar project becomes relevant when the consumption profile, electricity costs, available surfaces and site constraints make coherent self-consumption possible. The analysis must verify profitability as well as technical and operational limits."
+      },
+      {
+        "question": "Is a battery always necessary with a photovoltaic installation?",
+        "answer": "No. A battery is relevant only if it addresses a clear use: shifting energy, reducing certain peaks, improving flexibility or strengthening resilience. It must be sized according to the real needs of the site, not added automatically."
+      },
+      {
+        "question": "What is the difference between solar self-consumption and battery storage?",
+        "answer": "Self-consumption means directly using the solar electricity produced on site. Storage keeps part of this energy for another moment or a specific use. The two approaches can complement each other, but they do not address the same need."
+      },
+      {
+        "question": "Why carry out an energy analysis before requesting quotes?",
+        "answer": "An independent analysis helps clarify objectives, compare scenarios and avoid basing the decision only on a commercial offer. It frames the project before committing budgets, partners or a deployment schedule."
+      },
+      {
+        "question": "How can the power supply of a sensitive or industrial site be secured?",
+        "answer": "Security depends on priority loads, sensitivity to outages, the grid, the possible role of a battery and a generator. A structured approach compares backup and resilience scenarios before decision."
+      },
+      {
+        "question": "Does Atlas Energie Conseil install solar or battery equipment?",
+        "answer": "Atlas Energie Conseil acts as an independent advisor. The goal is to analyze, compare, structure and secure energy decisions. The support is not based on selling or supplying equipment."
+      },
+      {
+        "question": "Who is Atlas Energie Conseil’s support for?",
+        "answer": "The support is intended for industrial companies, tertiary sites, logistics players, infrastructure, developers, investors and project owners who want to clarify a solar, storage or energy performance decision in Morocco."
+      },
+      {
+        "question": "What happens during the first exchange?",
+        "answer": "The first exchange is used to understand the site context, objectives, constraints, project maturity and decisions to secure. It identifies useful next steps without immediately committing to a full study."
+      },
+      {
+        "question": "What elements are useful to analyze an energy site?",
+        "answer": "Useful elements may include electricity bills, consumption profiles, site constraints, available surfaces, continuity objectives, offers already received and investment priorities. Available information guides the level of analysis needed."
+      },
+      {
+        "question": "Does the pre-diagnostic replace a technical study?",
+        "answer": "No. The pre-diagnostic provides an indicative first orientation. It does not replace a complete technical, economic or financial study. It prepares a more structured exchange and identifies the scenario to explore."
+      }
+    ]
+  },
+  "schema": {
+    "professionalDescription": "Independent advisory in solar energy, storage, energy performance and project structuring in Morocco."
+  }
+}

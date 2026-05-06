@@ -1,0 +1,275 @@
+{
+  "language": {
+    "code": "fr",
+    "dir": "ltr",
+    "aria": "Choisir la langue"
+  },
+  "meta": {
+    "title": "Atlas Energie Conseil | Conseil indépendant solaire et stockage au Maroc",
+    "description": "Atlas Energie Conseil accompagne les entreprises au Maroc dans l’analyse de rentabilité, le solaire, le stockage et la sécurisation des décisions énergétiques.",
+    "socialTitle": "Atlas Energie Conseil | Conseil indépendant solaire et stockage au Maroc",
+    "socialDescription": "Conseil énergétique indépendant pour entreprises, développeurs et investisseurs au Maroc : solaire, stockage, rentabilité et décisions structurées.",
+    "imageAlt": "Centrale solaire et stockage d'énergie au Maroc",
+    "locale": "fr_MA"
+  },
+  "links": {
+    "contactEmailHref": "mailto:contact@atlasenergieconseil.com?subject=Demande%20de%20premier%20%C3%A9change%20-%20Atlas%20Energie%20Conseil&body=Bonjour%2C%20je%20souhaite%20%C3%A9changer%20au%20sujet%20d%E2%80%99un%20projet%20%C3%A9nerg%C3%A9tique%20au%20Maroc.%0D%0A%0D%0AMerci%20de%20me%20recontacter.",
+    "contactWhatsappHref": "https://wa.me/4915788152561?text=Bonjour%2C%20je%20souhaite%20%C3%A9changer%20au%20sujet%20d%E2%80%99un%20projet%20%C3%A9nerg%C3%A9tique%20%2F%20solaire%20%2F%20stockage%20au%20Maroc.",
+    "checklistEmailHref": "mailto:contact@atlasenergieconseil.com?subject=Demande%20de%20checklist%20-%20Atlas%20Energie%20Conseil&body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20recevoir%20la%20checklist%20avant%20d%E2%80%99investir%20dans%20un%20projet%20solaire%20ou%20stockage%20au%20Maroc.%0D%0A%0D%0AMerci%20de%20me%20recontacter.",
+    "checklistWhatsappHref": "https://wa.me/4915788152561?text=Bonjour%2C%20je%20souhaite%20recevoir%20la%20checklist%20avant%20d%E2%80%99investir%20dans%20un%20projet%20solaire%20ou%20stockage%20au%20Maroc."
+  },
+  "dom": {
+    "text": {
+      ".skip-link": "Aller au contenu principal",
+      ".brand-text small": "Conseil énergétique, solaire et stockage",
+      ".nav a[href='#services']": "Services",
+      ".nav a[href='#apropos']": "À propos",
+      ".nav a[href='#secteurs']": "Secteurs",
+      ".nav a[href='#avantages']": "Pourquoi nous choisir",
+      ".nav a[href='#contact']": "Contact",
+      ".hero-badge": "Conseil indépendant • Solaire • Stockage • Maroc",
+      "#hero-title": "Sécurisez vos décisions solaires, stockage et performance énergétique au Maroc",
+      ".hero-copy > p:not(.hero-badge)": "Atlas Energie Conseil accompagne les entreprises industrielles, sites tertiaires, développeurs et investisseurs dans l’analyse de rentabilité, la structuration technique et la sécurisation de leurs décisions énergétiques.",
+      ".hero-actions .button-primary": "Parler de votre projet",
+      ".hero-actions .button-secondary": "Voir les situations d’intervention",
+      "#situations .eyebrow": "Vos enjeux énergétiques",
+      "#situations-title": "Les situations où nous intervenons",
+      "#situations .section-heading p:not(.eyebrow)": "Nous intervenons lorsque la décision énergétique doit être clarifiée avant d’engager des budgets, des partenaires ou un calendrier de déploiement.",
+      "#situations .section-cta p": "Vous avez une décision énergétique à sécuriser ?",
+      "#situations .section-cta .button": "Demander un avis indépendant",
+      "#systemes .eyebrow": "Scénarios de décision",
+      "#systemes-title": "Quel système pour votre site ?",
+      "#systemes .section-heading p:not(.eyebrow)": "Chaque site présente un profil de consommation, un niveau de risque et une logique d’investissement différents. Atlas Energie Conseil vous aide à comparer les scénarios avant d’engager une solution technique ou financière.",
+      "#systemes .section-cta p": "Vous hésitez entre plusieurs scénarios ?",
+      "#systemes .section-cta .button": "Comparer les options avec un avis indépendant",
+      "#pre-diagnostic .diagnostic-copy .eyebrow": "Pré-diagnostic énergétique",
+      "#pre-diagnostic-title": "Clarifier votre besoin en quelques questions",
+      "#pre-diagnostic .diagnostic-copy > p:not(.eyebrow)": "Répondez à quelques questions simples pour identifier le scénario à approfondir. Ce pré-diagnostic ne remplace pas une étude technique : il sert à préparer un premier échange structuré et indépendant.",
+      ".diagnostic-assurance span": "Orientation indicative",
+      ".diagnostic-assurance p": "Aucune donnée personnelle n’est demandée, aucune réponse n’est enregistrée et aucun résultat ne constitue une garantie technique ou financière.",
+      ".diagnostic-result-kicker": "Orientation indicative",
+      ".diagnostic-result-note": "Cette orientation est indicative. Elle ne constitue pas une étude technique ou financière complète. Un échange permet de vérifier les hypothèses et de cadrer les prochaines étapes.",
+      ".diagnostic-result-actions .button-primary": "Discuter de cette orientation",
+      "[data-diagnostic-reset]": "Recommencer le pré-diagnostic",
+      "#services .eyebrow": "Services",
+      "#services-title": "Conseil technique et stratégique pour vos projets énergétiques",
+      "#apropos .eyebrow": "À propos",
+      "#apropos-title": "Une approche indépendante pour structurer les bonnes décisions énergétiques.",
+      "#secteurs .eyebrow": "Secteurs ciblés",
+      "#secteurs-title": "Des environnements où l’énergie devient un levier de compétitivité.",
+      "#avantages .eyebrow": "Pourquoi nous choisir",
+      "#avantages-title": "Une méthode claire pour transformer l’énergie en décision maîtrisée.",
+      "#faq .eyebrow": "FAQ énergie & décision",
+      "#faq-title": "Questions clés avant décision",
+      "#faq .section-heading p:not(.eyebrow)": "Avant d’engager un projet solaire, stockage ou hybride, certaines questions doivent être clarifiées. Ces réponses vous aident à mieux comprendre les enjeux avant un premier échange.",
+      "#checklist .eyebrow": "Ressource de décision",
+      "#checklist-title": "Recevoir la checklist avant d’investir",
+      "#checklist .checklist-copy > p:not(.eyebrow):not(.checklist-note)": "Une checklist concise pour identifier les points à clarifier avant de comparer des offres solaires, stockage ou hybrides au Maroc. Elle ne remplace pas une étude technique, mais aide à préparer une décision plus structurée.",
+      "#checklist .button-primary": "Demander la checklist",
+      "#checklist .checklist-email-link": "Recevoir par email",
+      "#checklist .checklist-note": "Envoi possible par WhatsApp ou email après un premier message. Aucun formulaire complexe pour le moment.",
+      "#checklist .checklist-preview h3": "Ce que la checklist vous aide à clarifier",
+      "#contact .eyebrow": "Contact",
+      "#contact-title": "Clarifions votre décision énergétique avec un premier échange confidentiel.",
+      "#contact .contact-copy > p:not(.eyebrow)": "Échange confidentiel pour qualifier votre besoin, clarifier les priorités et définir les prochaines étapes concrètes.",
+      ".contact-note-label": "Premier échange",
+      ".contact-note p": "Un cadre direct, confidentiel et orienté décision pour comprendre votre contexte, vos contraintes et les arbitrages à sécuriser.",
+      ".footer-brand p": "Conseil indépendant en énergie solaire, stockage et performance énergétique au Maroc.",
+      "#legal-title": "Mentions légales",
+      "#privacy-title": "Politique de confidentialité"
+    },
+    "attrs": {
+      ".nav-toggle": {
+        "aria-label": "Ouvrir la navigation"
+      },
+      ".nav": {
+        "aria-label": "Navigation principale"
+      },
+      ".faq-list": {
+        "aria-label": "Questions fréquentes sur le conseil énergétique, le solaire et le stockage"
+      },
+      ".checklist-preview": {
+        "aria-label": "Aperçu de la checklist"
+      },
+      ".legal-modal-close": {
+        "aria-label": "Fermer"
+      },
+      "meta[property='og:locale']": {
+        "content": "fr_MA"
+      },
+      "meta[name='description']": {
+        "content": "Atlas Energie Conseil accompagne les entreprises au Maroc dans l’analyse de rentabilité, le solaire, le stockage et la sécurisation des décisions énergétiques."
+      },
+      "meta[property='og:title']": {
+        "content": "Atlas Energie Conseil | Conseil indépendant solaire et stockage au Maroc"
+      },
+      "meta[property='og:description']": {
+        "content": "Conseil énergétique indépendant pour entreprises, développeurs et investisseurs au Maroc : solaire, stockage, rentabilité et décisions structurées."
+      },
+      "meta[property='og:image:alt']": {
+        "content": "Centrale solaire et stockage d'énergie au Maroc"
+      },
+      "meta[name='twitter:title']": {
+        "content": "Atlas Energie Conseil | Conseil indépendant solaire et stockage au Maroc"
+      },
+      "meta[name='twitter:description']": {
+        "content": "Conseil énergétique indépendant pour entreprises, développeurs et investisseurs au Maroc : solaire, stockage, rentabilité et décisions structurées."
+      },
+      "meta[name='twitter:image:alt']": {
+        "content": "Centrale solaire et stockage d'énergie au Maroc"
+      },
+      "#checklist .button-primary": {
+        "href": "https://wa.me/4915788152561?text=Bonjour%2C%20je%20souhaite%20recevoir%20la%20checklist%20avant%20d%E2%80%99investir%20dans%20un%20projet%20solaire%20ou%20stockage%20au%20Maroc."
+      },
+      "#checklist .checklist-email-link": {
+        "href": "mailto:contact@atlasenergieconseil.com?subject=Demande%20de%20checklist%20-%20Atlas%20Energie%20Conseil&body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20recevoir%20la%20checklist%20avant%20d%E2%80%99investir%20dans%20un%20projet%20solaire%20ou%20stockage%20au%20Maroc.%0D%0A%0D%0AMerci%20de%20me%20recontacter."
+      },
+      ".contact-card a[data-analytics-event='contact_email_click']": {
+        "href": "mailto:contact@atlasenergieconseil.com?subject=Demande%20de%20premier%20%C3%A9change%20-%20Atlas%20Energie%20Conseil&body=Bonjour%2C%20je%20souhaite%20%C3%A9changer%20au%20sujet%20d%E2%80%99un%20projet%20%C3%A9nerg%C3%A9tique%20au%20Maroc.%0D%0A%0D%0AMerci%20de%20me%20recontacter."
+      },
+      ".contact-card a[data-analytics-event='contact_whatsapp_click']": {
+        "href": "https://wa.me/4915788152561?text=Bonjour%2C%20je%20souhaite%20%C3%A9changer%20au%20sujet%20d%E2%80%99un%20projet%20%C3%A9nerg%C3%A9tique%20%2F%20solaire%20%2F%20stockage%20au%20Maroc."
+      }
+    }
+  },
+  "diagnostic": {
+    "progress": "{answered} / {total} questions complétées",
+    "questions": {
+      "site": {
+        "label": "Quel type de site souhaitez-vous analyser ?",
+        "options": {
+          "industrial": "Site industriel",
+          "tertiary": "Immobilier & tertiaire",
+          "logistics": "Logistique & infrastructures",
+          "investor": "Développeur / investisseur",
+          "sensitive": "Site sensible ou isolé"
+        }
+      },
+      "objective": {
+        "label": "Quel est votre objectif principal ?",
+        "options": {
+          "cost": "Réduire la facture électrique",
+          "solar": "Évaluer un projet solaire",
+          "battery": "Comparer l’intérêt d’une batterie",
+          "backup": "Sécuriser l’alimentation",
+          "investment": "Préparer un investissement"
+        }
+      },
+      "bill": {
+        "label": "Comment décririez-vous votre facture électrique ?",
+        "options": {
+          "high": "Élevée ou en hausse",
+          "stable": "Stable mais à optimiser",
+          "unknown": "Pas encore analysée",
+          "confirm": "Information à confirmer"
+        }
+      },
+      "consumption": {
+        "label": "Votre consommation est-elle principalement… ?",
+        "options": {
+          "day": "En journée",
+          "night": "Le soir ou la nuit",
+          "continuous": "Continue / 24h",
+          "variable": "Variable ou inconnue"
+        }
+      },
+      "battery": {
+        "label": "La batterie est-elle déjà envisagée ?",
+        "options": {
+          "yes": "Oui",
+          "no": "Non",
+          "compare": "À comparer",
+          "unknown": "Je ne sais pas encore"
+        }
+      },
+      "continuity": {
+        "label": "La continuité d’alimentation est-elle critique ?",
+        "options": {
+          "critical": "Oui, critique",
+          "important": "Importante mais secondaire",
+          "low": "Non prioritaire",
+          "clarify": "À clarifier"
+        }
+      },
+      "stage": {
+        "label": "Quel est le stade du projet ?",
+        "options": {
+          "early": "Première réflexion",
+          "opportunity": "Étude d’opportunité",
+          "offers": "Offres ou devis déjà reçus",
+          "investment": "Investissement à préparer",
+          "optimization": "Site existant à optimiser"
+        }
+      }
+    },
+    "results": {
+      "analysis": {
+        "title": "Analyse énergétique recommandée",
+        "text": "Votre projet gagnerait à être cadré par une analyse énergétique indépendante avant de comparer des solutions techniques."
+      },
+      "pv": {
+        "title": "Scénario PV sans batterie à étudier",
+        "text": "Un scénario photovoltaïque sans batterie pourrait être une première piste à étudier, notamment si votre consommation est naturellement alignée avec la production solaire."
+      },
+      "battery": {
+        "title": "Scénario PV + batterie à comparer",
+        "text": "Un scénario PV + batterie mérite d’être comparé, à condition de vérifier les usages réels du stockage, son dimensionnement et sa cohérence économique."
+      },
+      "backup": {
+        "title": "Résilience / backup à analyser",
+        "text": "Votre priorité semble liée à la continuité d’activité. Une analyse de résilience énergétique et de backup est recommandée avant toute décision."
+      },
+      "exchange": {
+        "title": "Premier échange recommandé",
+        "text": "Un premier échange permettra de clarifier les hypothèses, comparer les scénarios et préparer une décision plus sécurisée."
+      }
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "question": "Quand un projet solaire devient-il pertinent pour une entreprise au Maroc ?",
+        "answer": "Un projet solaire devient pertinent lorsque le profil de consommation, les coûts électriques, les surfaces disponibles et les contraintes du site permettent d’envisager une autoconsommation cohérente. L’analyse doit vérifier la rentabilité, mais aussi les limites techniques et opérationnelles."
+      },
+      {
+        "question": "Une batterie est-elle toujours nécessaire avec une installation photovoltaïque ?",
+        "answer": "Non. Une batterie n’est pertinente que si elle répond à un usage clair : décaler l’énergie, réduire certains pics, améliorer la flexibilité ou renforcer la résilience. Elle doit être dimensionnée selon les besoins réels du site, pas ajoutée automatiquement."
+      },
+      {
+        "question": "Quelle est la différence entre autoconsommation solaire et stockage batterie ?",
+        "answer": "L’autoconsommation consiste à utiliser directement l’électricité solaire produite sur site. Le stockage permet de conserver une partie de cette énergie pour un autre moment ou un usage spécifique. Les deux logiques peuvent être complémentaires, mais elles ne répondent pas au même besoin."
+      },
+      {
+        "question": "Pourquoi réaliser une analyse énergétique avant de demander des devis ?",
+        "answer": "Une analyse indépendante permet de clarifier les objectifs, comparer les scénarios et éviter de baser la décision uniquement sur une offre commerciale. Elle aide à cadrer le projet avant d’engager des budgets, des partenaires ou un calendrier de déploiement."
+      },
+      {
+        "question": "Comment sécuriser l’alimentation d’un site sensible ou industriel ?",
+        "answer": "La sécurisation dépend des charges prioritaires, de la sensibilité aux coupures, du réseau, du rôle éventuel d’une batterie et d’un groupe électrogène. Une approche structurée permet de comparer les scénarios de backup et de résilience avant décision."
+      },
+      {
+        "question": "Atlas Energie Conseil installe-t-il des équipements solaires ou batteries ?",
+        "answer": "Atlas Energie Conseil intervient comme conseil indépendant. L’objectif est d’analyser, comparer, structurer et sécuriser les décisions énergétiques. L’accompagnement ne repose pas sur la vente ou la fourniture d’équipements."
+      },
+      {
+        "question": "À qui s’adresse l’accompagnement d’Atlas Energie Conseil ?",
+        "answer": "L’accompagnement s’adresse aux entreprises industrielles, sites tertiaires, acteurs logistiques, infrastructures, développeurs, investisseurs et porteurs de projets qui souhaitent clarifier une décision solaire, stockage ou performance énergétique au Maroc."
+      },
+      {
+        "question": "Que se passe-t-il lors du premier échange ?",
+        "answer": "Le premier échange sert à comprendre le contexte du site, les objectifs, les contraintes, le niveau de maturité du projet et les décisions à sécuriser. Il permet d’identifier les prochaines étapes utiles sans engager immédiatement une étude complète."
+      },
+      {
+        "question": "Quels éléments sont utiles pour analyser un site énergétique ?",
+        "answer": "Les éléments utiles peuvent inclure les factures électriques, profils de consommation, contraintes de site, surfaces disponibles, objectifs de continuité, offres déjà reçues et priorités d’investissement. Les informations disponibles orientent le niveau d’analyse nécessaire."
+      },
+      {
+        "question": "Le pré-diagnostic remplace-t-il une étude technique ?",
+        "answer": "Non. Le pré-diagnostic donne une première orientation indicative. Il ne remplace pas une étude technique, économique ou financière complète. Il sert à préparer un échange plus structuré et à identifier le scénario à approfondir."
+      }
+    ]
+  },
+  "schema": {
+    "professionalDescription": "Conseil indépendant en énergie solaire, stockage, performance énergétique et structuration de projets au Maroc."
+  }
+}

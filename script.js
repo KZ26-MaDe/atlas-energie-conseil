@@ -15,10 +15,256 @@ const diagnosticResultTitle = document.querySelector("[data-diagnostic-result-ti
 const diagnosticResultText = document.querySelector("[data-diagnostic-result-text]");
 const diagnosticReset = document.querySelector("[data-diagnostic-reset]");
 const analyticsEventTargets = document.querySelectorAll("[data-analytics-event]");
+const languageButtons = document.querySelectorAll("[data-language-option]");
+const professionalSchema = document.getElementById("schema-professional-service");
+const faqSchema = document.getElementById("schema-faq");
 
-const trackAnalyticsEvent = (eventName) => {
+const DEFAULT_LANGUAGE = "fr";
+const SUPPORTED_LANGUAGES = ["fr", "en", "ar", "es"];
+const LANGUAGE_STORAGE_KEY = "atlas-language";
+
+const translationCache = {};
+let activeTranslations = {};
+let activeLanguage = DEFAULT_LANGUAGE;
+let renderDiagnosticResult = () => {};
+let updateDiagnosticProgress = () => {};
+
+const trackAnalyticsEvent = (eventName, params = {}) => {
   if (typeof window.gtag === "function") {
-    window.gtag("event", eventName);
+    window.gtag("event", eventName, params);
+  }
+};
+
+const getNestedValue = (source, path) => {
+  if (!source || !path) {
+    return undefined;
+  }
+
+  return path.split(".").reduce((value, part) => {
+    if (value === undefined || value === null) {
+      return undefined;
+    }
+    return value[part];
+  }, source);
+};
+
+const formatTranslation = (value, params = {}) => {
+  if (typeof value !== "string") {
+    return "";
+  }
+
+  return Object.entries(params).reduce(
+    (text, [key, replacement]) => text.replaceAll(`{${key}}`, String(replacement)),
+    value
+  );
+};
+
+const translate = (path, params = {}) => {
+  const value = getNestedValue(activeTranslations, path) ?? getNestedValue(translationCache[DEFAULT_LANGUAGE], path);
+  return formatTranslation(value, params);
+};
+
+const safeQueryAll = (selector) => {
+  try {
+    return document.querySelectorAll(selector);
+  } catch {
+    return [];
+  }
+};
+
+const applyDataBindings = () => {
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const value = translate(element.getAttribute("data-i18n"));
+    if (value) {
+      element.textContent = value;
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-attr]").forEach((element) => {
+    const bindings = element.getAttribute("data-i18n-attr")?.split(",") ?? [];
+    bindings.forEach((binding) => {
+      const [attribute, path] = binding.split(":").map((part) => part.trim());
+      const value = translate(path);
+      if (attribute && value) {
+        element.setAttribute(attribute, value);
+      }
+    });
+  });
+};
+
+const applySelectorTranslations = () => {
+  const textMap = activeTranslations.dom?.text ?? {};
+  const attrMap = activeTranslations.dom?.attrs ?? {};
+
+  Object.entries(textMap).forEach(([selector, value]) => {
+    safeQueryAll(selector).forEach((element) => {
+      element.textContent = value;
+    });
+  });
+
+  Object.entries(attrMap).forEach(([selector, attributes]) => {
+    safeQueryAll(selector).forEach((element) => {
+      Object.entries(attributes).forEach(([attribute, value]) => {
+        element.setAttribute(attribute, value);
+      });
+    });
+  });
+};
+
+const applyDiagnosticTranslations = () => {
+  diagnosticQuestions.forEach((question) => {
+    const questionKey = question.getAttribute("data-diagnostic-question");
+    const questionTranslation = getNestedValue(activeTranslations, `diagnostic.questions.${questionKey}`);
+
+    if (!questionKey || !questionTranslation) {
+      return;
+    }
+
+    const legend = question.querySelector("legend");
+    if (legend) {
+      legend.textContent = questionTranslation.label;
+    }
+
+    question.querySelectorAll("[data-diagnostic-option]").forEach((button) => {
+      const optionKey = button.getAttribute("data-value");
+      const optionLabel = questionTranslation.options?.[optionKey];
+      if (optionLabel) {
+        button.textContent = optionLabel;
+      }
+    });
+  });
+
+  updateDiagnosticProgress();
+  renderDiagnosticResult();
+};
+
+const applyFaqTranslations = () => {
+  const faqItems = activeTranslations.faq?.items ?? [];
+
+  document.querySelectorAll(".faq-item").forEach((item, index) => {
+    const faqItem = faqItems[index];
+    if (!faqItem) {
+      return;
+    }
+
+    const summary = item.querySelector("summary");
+    const answer = item.querySelector("p");
+    if (summary) {
+      summary.textContent = faqItem.question;
+    }
+    if (answer) {
+      answer.textContent = faqItem.answer;
+    }
+  });
+};
+
+const updateStructuredData = () => {
+  if (professionalSchema) {
+    const professionalData = {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      name: "Atlas Energie Conseil",
+      url: "https://atlasenergieconseil.com/",
+      email: "contact@atlasenergieconseil.com",
+      description: activeTranslations.schema?.professionalDescription ?? translate("meta.description"),
+      areaServed: {
+        "@type": "Country",
+        name: "Morocco"
+      },
+      sameAs: ["https://www.linkedin.com/in/khalid-zergoun-a361421a6/"]
+    };
+
+    professionalSchema.textContent = JSON.stringify(professionalData, null, 2);
+  }
+
+  if (faqSchema && activeTranslations.faq?.items) {
+    const faqData = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: activeTranslations.faq.items.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer
+        }
+      }))
+    };
+
+    faqSchema.textContent = JSON.stringify(faqData, null, 2);
+  }
+};
+
+const updateLanguageControls = () => {
+  languageButtons.forEach((button) => {
+    const isActive = button.getAttribute("data-language-option") === activeLanguage;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+};
+
+const applyTranslations = () => {
+  const languageConfig = activeTranslations.language ?? {};
+  const lang = languageConfig.code || activeLanguage;
+  const direction = languageConfig.dir || (lang === "ar" ? "rtl" : "ltr");
+
+  document.documentElement.lang = lang;
+  document.documentElement.dir = direction;
+
+  if (activeTranslations.meta?.title) {
+    document.title = activeTranslations.meta.title;
+  }
+
+  applyDataBindings();
+  applySelectorTranslations();
+  applyDiagnosticTranslations();
+  applyFaqTranslations();
+  updateStructuredData();
+  updateLanguageControls();
+};
+
+const loadTranslations = async (language) => {
+  const normalizedLanguage = SUPPORTED_LANGUAGES.includes(language) ? language : DEFAULT_LANGUAGE;
+
+  if (translationCache[normalizedLanguage]) {
+    return translationCache[normalizedLanguage];
+  }
+
+  const response = await fetch(`assets/i18n/${normalizedLanguage}.json`, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Unable to load ${normalizedLanguage} translations`);
+  }
+
+  const translations = await response.json();
+  translationCache[normalizedLanguage] = translations;
+  return translations;
+};
+
+const setLanguage = async (language, { persist = true, track = false } = {}) => {
+  const normalizedLanguage = SUPPORTED_LANGUAGES.includes(language) ? language : DEFAULT_LANGUAGE;
+
+  try {
+    if (!translationCache[DEFAULT_LANGUAGE]) {
+      translationCache[DEFAULT_LANGUAGE] = await loadTranslations(DEFAULT_LANGUAGE);
+    }
+
+    activeTranslations = await loadTranslations(normalizedLanguage);
+    activeLanguage = normalizedLanguage;
+
+    if (persist) {
+      localStorage.setItem(LANGUAGE_STORAGE_KEY, normalizedLanguage);
+    }
+
+    applyTranslations();
+
+    if (track) {
+      trackAnalyticsEvent("language_switch", { language: normalizedLanguage });
+    }
+  } catch (error) {
+    console.warn("Atlas i18n fallback:", error);
+    activeTranslations = translationCache[DEFAULT_LANGUAGE] ?? {};
+    activeLanguage = DEFAULT_LANGUAGE;
+    applyTranslations();
   }
 };
 
@@ -92,42 +338,33 @@ analyticsEventTargets.forEach((target) => {
   });
 });
 
+languageButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const language = button.getAttribute("data-language-option");
+    if (language && language !== activeLanguage) {
+      setLanguage(language, { persist: true, track: true });
+    }
+  });
+});
+
 if (diagnosticForm && diagnosticQuestions.length > 0) {
   const answers = {};
   const totalQuestions = diagnosticQuestions.length;
   let diagnosticCompletedTracked = false;
-  const resultTypes = {
-    analysis: {
-      title: "Analyse énergétique recommandée",
-      text: "Votre projet gagnerait à être cadré par une analyse énergétique indépendante avant de comparer des solutions techniques."
-    },
-    pv: {
-      title: "Scénario PV sans batterie à étudier",
-      text: "Un scénario photovoltaïque sans batterie pourrait être une première piste à étudier, notamment si votre consommation est naturellement alignée avec la production solaire."
-    },
-    battery: {
-      title: "Scénario PV + batterie à comparer",
-      text: "Un scénario PV + batterie mérite d’être comparé, à condition de vérifier les usages réels du stockage, son dimensionnement et sa cohérence économique."
-    },
-    backup: {
-      title: "Résilience / backup à analyser",
-      text: "Votre priorité semble liée à la continuité d’activité. Une analyse de résilience énergétique et de backup est recommandée avant toute décision."
-    },
-    exchange: {
-      title: "Premier échange recommandé",
-      text: "Un premier échange permettra de clarifier les hypothèses, comparer les scénarios et préparer une décision plus sécurisée."
-    }
-  };
+  let currentResultKey = "";
 
-  const updateProgress = () => {
+  updateDiagnosticProgress = () => {
     const answeredCount = Object.keys(answers).length;
     if (diagnosticProgress) {
-      diagnosticProgress.textContent = `${answeredCount} / ${totalQuestions} questions complétées`;
+      diagnosticProgress.textContent = translate("diagnostic.progress", {
+        answered: answeredCount,
+        total: totalQuestions
+      });
     }
     return answeredCount;
   };
 
-  const getDiagnosticResult = () => {
+  const getDiagnosticResultKey = () => {
     const uncertaintyCount = [
       answers.bill === "unknown",
       answers.bill === "confirm",
@@ -142,7 +379,7 @@ if (diagnosticForm && diagnosticQuestions.length > 0) {
       answers.site === "sensitive" ||
       answers.objective === "backup"
     ) {
-      return resultTypes.backup;
+      return "backup";
     }
 
     if (
@@ -150,7 +387,7 @@ if (diagnosticForm && diagnosticQuestions.length > 0) {
       answers.stage === "investment" ||
       answers.objective === "investment"
     ) {
-      return resultTypes.exchange;
+      return "exchange";
     }
 
     if (
@@ -160,7 +397,7 @@ if (diagnosticForm && diagnosticQuestions.length > 0) {
       answers.consumption === "night" ||
       answers.consumption === "continuous"
     ) {
-      return resultTypes.battery;
+      return "battery";
     }
 
     if (
@@ -169,14 +406,29 @@ if (diagnosticForm && diagnosticQuestions.length > 0) {
       answers.battery === "no" &&
       (answers.continuity === "low" || answers.continuity === "important")
     ) {
-      return resultTypes.pv;
+      return "pv";
     }
 
     if (uncertaintyCount >= 2 || answers.stage === "early") {
-      return resultTypes.analysis;
+      return "analysis";
     }
 
-    return resultTypes.exchange;
+    return "exchange";
+  };
+
+  renderDiagnosticResult = () => {
+    if (
+      !currentResultKey ||
+      !diagnosticResult ||
+      diagnosticResult.hidden ||
+      !diagnosticResultTitle ||
+      !diagnosticResultText
+    ) {
+      return;
+    }
+
+    diagnosticResultTitle.textContent = translate(`diagnostic.results.${currentResultKey}.title`);
+    diagnosticResultText.textContent = translate(`diagnostic.results.${currentResultKey}.text`);
   };
 
   const showDiagnosticResult = () => {
@@ -184,9 +436,8 @@ if (diagnosticForm && diagnosticQuestions.length > 0) {
       return;
     }
 
-    const result = getDiagnosticResult();
-    diagnosticResultTitle.textContent = result.title;
-    diagnosticResultText.textContent = result.text;
+    currentResultKey = getDiagnosticResultKey();
+    renderDiagnosticResult();
     diagnosticResult.hidden = false;
 
     if (!diagnosticCompletedTracked) {
@@ -215,7 +466,7 @@ if (diagnosticForm && diagnosticQuestions.length > 0) {
           answers[questionKey] = button.getAttribute("data-value");
         }
 
-        const answeredCount = updateProgress();
+        const answeredCount = updateDiagnosticProgress();
         if (answeredCount === totalQuestions) {
           showDiagnosticResult();
         }
@@ -239,12 +490,13 @@ if (diagnosticForm && diagnosticQuestions.length > 0) {
       diagnosticResult.hidden = true;
     }
 
+    currentResultKey = "";
     diagnosticCompletedTracked = false;
-    updateProgress();
+    updateDiagnosticProgress();
     diagnosticQuestions[0]?.querySelector("[data-diagnostic-option]")?.focus();
   });
 
-  updateProgress();
+  updateDiagnosticProgress();
 }
 
 if (legalTriggers.length > 0 && legalModals.length > 0) {
@@ -292,3 +544,6 @@ if (legalTriggers.length > 0 && legalModals.length > 0) {
     }
   });
 }
+
+const preferredLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY) || DEFAULT_LANGUAGE;
+setLanguage(preferredLanguage, { persist: false });
