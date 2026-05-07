@@ -28,6 +28,10 @@ let activeTranslations = {};
 let activeLanguage = DEFAULT_LANGUAGE;
 let renderDiagnosticResult = () => {};
 let updateDiagnosticProgress = () => {};
+let previousTextSelectors = new Set();
+let previousAttrSelectors = new Set();
+const originalSelectorText = new Map();
+const originalSelectorAttrs = new Map();
 
 const trackAnalyticsEvent = (eventName, params = {}) => {
   if (typeof window.gtag === "function") {
@@ -72,6 +76,54 @@ const safeQueryAll = (selector) => {
   }
 };
 
+const getSelectorKey = (selector, index, attribute = "") => `${selector}::${index}::${attribute}`;
+
+const rememberOriginalText = (selector, elements) => {
+  elements.forEach((element, index) => {
+    const key = getSelectorKey(selector, index);
+    if (!originalSelectorText.has(key)) {
+      originalSelectorText.set(key, element.innerHTML);
+    }
+  });
+};
+
+const restoreOriginalText = (selector) => {
+  safeQueryAll(selector).forEach((element, index) => {
+    const originalText = originalSelectorText.get(getSelectorKey(selector, index));
+    if (originalText !== undefined) {
+      element.innerHTML = originalText;
+    }
+  });
+};
+
+const rememberOriginalAttrs = (selector, elements, attributes) => {
+  elements.forEach((element, index) => {
+    Object.keys(attributes).forEach((attribute) => {
+      const key = getSelectorKey(selector, index, attribute);
+      if (!originalSelectorAttrs.has(key)) {
+        originalSelectorAttrs.set(key, element.getAttribute(attribute));
+      }
+    });
+  });
+};
+
+const restoreOriginalAttrs = (selector) => {
+  safeQueryAll(selector).forEach((element, index) => {
+    Array.from(originalSelectorAttrs.entries()).forEach(([key, originalValue]) => {
+      const [storedSelector, storedIndex, attribute] = key.split("::");
+      if (storedSelector !== selector || Number(storedIndex) !== index || !attribute) {
+        return;
+      }
+
+      if (originalValue === null) {
+        element.removeAttribute(attribute);
+      } else {
+        element.setAttribute(attribute, originalValue);
+      }
+    });
+  });
+};
+
 const applyDataBindings = () => {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const value = translate(element.getAttribute("data-i18n"));
@@ -95,20 +147,41 @@ const applyDataBindings = () => {
 const applySelectorTranslations = () => {
   const textMap = activeTranslations.dom?.text ?? {};
   const attrMap = activeTranslations.dom?.attrs ?? {};
+  const textSelectors = new Set(Object.keys(textMap));
+  const attrSelectors = new Set(Object.keys(attrMap));
+
+  previousTextSelectors.forEach((selector) => {
+    if (!textSelectors.has(selector)) {
+      restoreOriginalText(selector);
+    }
+  });
+
+  previousAttrSelectors.forEach((selector) => {
+    if (!attrSelectors.has(selector)) {
+      restoreOriginalAttrs(selector);
+    }
+  });
 
   Object.entries(textMap).forEach(([selector, value]) => {
-    safeQueryAll(selector).forEach((element) => {
+    const elements = safeQueryAll(selector);
+    rememberOriginalText(selector, elements);
+    elements.forEach((element) => {
       element.textContent = value;
     });
   });
 
   Object.entries(attrMap).forEach(([selector, attributes]) => {
-    safeQueryAll(selector).forEach((element) => {
+    const elements = safeQueryAll(selector);
+    rememberOriginalAttrs(selector, elements, attributes);
+    elements.forEach((element) => {
       Object.entries(attributes).forEach(([attribute, value]) => {
         element.setAttribute(attribute, value);
       });
     });
   });
+
+  previousTextSelectors = textSelectors;
+  previousAttrSelectors = attrSelectors;
 };
 
 const applyDiagnosticTranslations = () => {
@@ -437,8 +510,8 @@ if (diagnosticForm && diagnosticQuestions.length > 0) {
     }
 
     currentResultKey = getDiagnosticResultKey();
-    renderDiagnosticResult();
     diagnosticResult.hidden = false;
+    renderDiagnosticResult();
 
     if (!diagnosticCompletedTracked) {
       trackAnalyticsEvent("pre_diagnostic_completed");
