@@ -5,78 +5,172 @@
     "aria": "Elegir idioma"
   },
   "meta": {
-    "title": "Atlas Energie Conseil | Consultoría independiente solar y almacenamiento en Marruecos",
-    "description": "Atlas Energie Conseil acompaña a empresas en Marruecos en análisis de rentabilidad, solar, almacenamiento y decisiones energéticas seguras.",
-    "socialTitle": "Atlas Energie Conseil | Consultoría independiente solar y almacenamiento en Marruecos",
-    "socialDescription": "Consultoría energética independiente para empresas, promotores e inversores en Marruecos: solar, almacenamiento, rentabilidad y decisiones estructuradas.",
-    "imageAlt": "Planta solar y almacenamiento de energía en Marruecos",
+    "title": "Atlas Energie Conseil | Asesoría solar y almacenamiento en Marruecos",
+    "description": "Asesoría independiente en energía solar, almacenamiento en baterías y desempeño energético en Marruecos para viviendas, empresas, explotaciones agrícolas, hoteles, escuelas y promotores de proyectos.",
+    "socialTitle": "Atlas Energie Conseil | Asesoría solar y almacenamiento en Marruecos",
+    "socialDescription": "Asesoría energética independiente en Marruecos: energía solar, almacenamiento, análisis de rentabilidad y decisiones estructuradas para proyectos reales.",
+    "imageAlt": "Planta solar y sistema de almacenamiento de energía en Marruecos",
     "locale": "es_ES"
   },
   "links": {
-    "contactEmailHref": "mailto:contact@atlasenergieconseil.com?subject=Solicitud%20de%20primer%20intercambio%20-%20Atlas%20Energie%20Conseil&body=Hola%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20energ%C3%A9tico%20en%20Marruecos.%0D%0A%0D%0AGracias%20por%20contactarme.",
-    "contactWhatsappHref": "https://wa.me/4915788152561?text=Hola%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20energ%C3%A9tico%20%2F%20solar%20%2F%20almacenamiento%20en%20Marruecos.",
-    "checklistEmailHref": "mailto:contact@atlasenergieconseil.com?subject=Solicitud%20de%20checklist%20-%20Atlas%20Energie%20Conseil&body=Hola%2C%0D%0A%0D%0AMe%20gustar%C3%ADa%20recibir%20la%20checklist%20antes%20de%20invertir%20en%20un%20proyecto%20solar%20o%20de%20almacenamiento%20en%20Marruecos.%0D%0A%0D%0AGracias%20por%20contactarme.",
-    "checklistWhatsappHref": "https://wa.me/4915788152561?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20la%20checklist%20antes%20de%20invertir%20en%20un%20proyecto%20solar%20o%20de%20almacenamiento%20en%20Marruecos."
+    "contactEmailHref": "mailto:contact@atlasenergieconseil.com?subject=Solicitud%20de%20conversaci%C3%B3n%20sobre%20proyecto%20-%20Atlas%20Energie%20Conseil&body=Hola%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20de%20energ%C3%ADa%20solar%2C%20almacenamiento%20o%20desempe%C3%B1o%20energ%C3%A9tico%20en%20Marruecos.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20su%20contacto.",
+    "contactWhatsappHref": "https://wa.me/4915788152561?text=Hola%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20de%20energ%C3%ADa%20solar%2C%20almacenamiento%20o%20desempe%C3%B1o%20energ%C3%A9tico%20en%20Marruecos.",
+    "checklistEmailHref": "mailto:contact@atlasenergieconseil.com?subject=Solicitud%20de%20lista%20de%20verificaci%C3%B3n%20-%20Atlas%20Energie%20Conseil&body=Hola%2C%0D%0A%0D%0AMe%20gustar%C3%ADa%20recibir%20la%20lista%20de%20verificaci%C3%B3n%20antes%20de%20invertir%20en%20un%20proyecto%20de%20energ%C3%ADa%20solar%2C%20almacenamiento%20o%20sistema%20h%C3%ADbrido%20en%20Marruecos.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20su%20contacto.",
+    "checklistWhatsappHref": "https://wa.me/4915788152561?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20la%20lista%20de%20verificaci%C3%B3n%20antes%20de%20invertir%20en%20un%20proyecto%20de%20energ%C3%ADa%20solar%2C%20almacenamiento%20o%20sistema%20h%C3%ADbrido%20en%20Marruecos."
   },
   "dom": {
     "text": {
       ".skip-link": "Ir al contenido principal",
-      ".brand-text small": "Consultoría energética, solar y almacenamiento",
+      ".brand-text small": "Asesoría en energía solar y almacenamiento",
       ".nav a[href='#services']": "Servicios",
       ".nav a[href='#apropos']": "Acerca de",
       ".nav a[href='#secteurs']": "Sectores",
-      ".nav a[href='#avantages']": "Por qué elegirnos",
+      ".nav a[href='#avantages']": "Por qué Atlas",
       ".nav a[href='#contact']": "Contacto",
-      ".hero-badge": "Consultoría independiente • Solar • Almacenamiento • Marruecos",
-      "#hero-title": "Asegure sus decisiones solares, de almacenamiento y rendimiento energético en Marruecos",
-      ".hero-copy > p:not(.hero-badge)": "Atlas Energie Conseil acompaña a empresas industriales, sitios terciarios, promotores e inversores en el análisis de rentabilidad, la estructuración técnica y la seguridad de sus decisiones energéticas.",
-      ".hero-actions .button-primary": "Hablar de su proyecto",
-      ".hero-actions .button-secondary": "Ver situaciones de intervención",
-      "#situations .eyebrow": "Sus desafíos energéticos",
-      "#situations-title": "Situaciones en las que intervenimos",
-      "#situations .section-heading p:not(.eyebrow)": "Intervenimos cuando una decisión energética debe aclararse antes de comprometer presupuestos, socios o un calendario de despliegue.",
-      "#situations .section-cta p": "¿Tiene una decisión energética que asegurar?",
-      "#situations .section-cta .button": "Solicitar una opinión independiente",
+      ".hero-badge": "Asesoría independiente | Solar | Almacenamiento | Marruecos",
+      "#hero-title": "Tome decisiones más claras en energía solar y almacenamiento en Marruecos",
+      ".hero-copy > p:not(.hero-badge)": "Atlas Energie Conseil ayuda a propietarios de viviendas con proyectos estructurados, empresas, explotaciones agrícolas, hoteles, escuelas, promotores e inversores a evaluar la rentabilidad, comparar opciones técnicas y avanzar con una visión independiente.",
+      ".hero-actions .button-primary": "Hablar del proyecto",
+      ".hero-actions .button-secondary": "Ver casos habituales",
+      "#situations .eyebrow": "Sus retos energéticos",
+      "#situations-title": "Dónde podemos ayudar",
+      "#situations .section-heading p:not(.eyebrow)": "Intervenimos cuando una decisión energética debe aclararse antes de comprometer presupuesto, socios o un calendario de ejecución.",
+      ".situation-card:nth-of-type(1) h3": "Facturas eléctricas elevadas",
+      ".situation-card:nth-of-type(1) p": "Identificar palancas de reducción de costes y ordenar las acciones que realmente merecen estudio.",
+      ".situation-card:nth-of-type(2) h3": "Rentabilidad solar poco clara",
+      ".situation-card:nth-of-type(2) p": "Revisar el potencial fotovoltaico, las hipótesis económicas y las condiciones de una decisión sólida.",
+      ".situation-card:nth-of-type(3) h3": "Batería: ¿sí o no?",
+      ".situation-card:nth-of-type(3) p": "Aclarar el valor del almacenamiento según los usos, el perfil de consumo y los objetivos de continuidad.",
+      ".situation-card:nth-of-type(4) h3": "Continuidad del suministro",
+      ".situation-card:nth-of-type(4) p": "Reforzar la continuidad operativa de sitios sensibles, industriales, agrícolas o logísticos.",
+      ".situation-card:nth-of-type(5) h3": "Inversión energética por preparar",
+      ".situation-card:nth-of-type(5) p": "Estructurar estudios, escenarios y decisiones antes de asumir un compromiso financiero.",
+      ".situation-card:nth-of-type(6) h3": "Opinión independiente antes de decidir",
+      ".situation-card:nth-of-type(6) p": "Obtener una lectura externa, rigurosa y neutral antes de validar una solución o un socio.",
+      "#situations .section-cta p": "¿Tiene una decisión energética que aclarar?",
+      "#situations .section-cta .button": "Pedir una opinión independiente",
       "#systemes .eyebrow": "Escenarios de decisión",
-      "#systemes-title": "¿Qué sistema para su sitio?",
-      "#systemes .section-heading p:not(.eyebrow)": "Cada sitio presenta un perfil de consumo, un nivel de riesgo y una lógica de inversión diferentes. Atlas Energie Conseil le ayuda a comparar escenarios antes de comprometer una solución técnica o financiera.",
-      "#systemes .section-cta p": "¿Duda entre varios escenarios?",
-      "#systemes .section-cta .button": "Comparar opciones con asesoramiento independiente",
+      "#systemes-title": "¿Qué sistema encaja con su sitio?",
+      "#systems-title": "¿Qué sistema encaja con su sitio?",
+      "#systemes .section-heading p:not(.eyebrow)": "Cada sitio tiene un perfil de consumo, un nivel de riesgo y una lógica de inversión distintos. Atlas Energie Conseil le ayuda a comparar escenarios antes de comprometerse con una solución técnica o financiera.",
+      ".system-detail:nth-of-type(2) .system-label": "Adecuado para",
+      ".system-detail:nth-of-type(3) .system-label": "Atlas revisa",
+      ".system-card:nth-of-type(1) h3": "PV sin batería",
+      ".system-card:nth-of-type(1) .system-description": "Una opción fotovoltaica centrada en reducir costes eléctricos y mejorar el autoconsumo.",
+      ".system-card:nth-of-type(1) .system-detail:nth-of-type(2) p": "Empresas o sitios con consumo diurno regular que quieren reducir costes sin añadir complejidad innecesaria al sistema.",
+      ".system-card:nth-of-type(1) .system-detail:nth-of-type(3) p": "Perfil de carga, potencial solar, tasa de autoconsumo, rentabilidad, restricciones del sitio y coherencia económica.",
+      ".system-card:nth-of-type(1) .system-note": "Suele merecer estudio cuando el consumo coincide de forma natural con las horas de producción solar.",
+      ".system-card:nth-of-type(2) h3": "PV + batería",
+      ".system-card:nth-of-type(2) .system-description": "Un escenario que combina generación solar y almacenamiento para mejorar autoconsumo, flexibilidad y gestión de picos.",
+      ".system-card:nth-of-type(2) .system-detail:nth-of-type(2) p": "Sitios con picos de demanda, necesidades de flexibilidad, objetivos de autonomía parcial o un interés claro en el almacenamiento.",
+      ".system-card:nth-of-type(2) .system-detail:nth-of-type(3) p": "Dimensionamiento de la batería, ciclos de uso, arbitraje económico, reducción de picos, resiliencia esperada y límites operativos.",
+      ".system-card:nth-of-type(2) .system-note": "Es pertinente solo si la batería responde a un uso medible, no como añadido técnico automático.",
+      ".system-card:nth-of-type(3) h3": "PV + batería + generador",
+      ".system-card:nth-of-type(3) .system-description": "Una arquitectura híbrida para sitios donde la continuidad eléctrica, el respaldo o la resiliencia energética son críticos.",
+      ".system-card:nth-of-type(3) .system-detail:nth-of-type(2) p": "Sitios industriales, logísticos, agrícolas o aislados expuestos a cortes, restricciones de red o exigencias de continuidad.",
+      ".system-card:nth-of-type(3) .system-detail:nth-of-type(3) p": "Cargas prioritarias, estrategia de respaldo, coordinación solar-almacenamiento-generador, niveles de seguridad, costes operativos y escenarios de emergencia.",
+      ".system-card:nth-of-type(3) .system-note": "Debe analizarse cuando la cuestión principal supera el ahorro energético y afecta la continuidad de la actividad.",
+      ".system-card:nth-of-type(4) h3": "Análisis energético antes de invertir",
+      ".system-card:nth-of-type(4) .system-description": "Una misión independiente para aclarar opciones antes de comprometerse con un proyecto solar, de almacenamiento o híbrido.",
+      ".system-card:nth-of-type(4) .system-detail:nth-of-type(2) p": "Responsables, inversores y promotores de proyectos que necesitan validar hipótesis antes del presupuesto, la selección de socios o la ejecución.",
+      ".system-card:nth-of-type(4) .system-detail:nth-of-type(3) p": "Consumo, objetivos, rentabilidad, riesgos técnicos, escenarios comparados, prioridades de inversión y próximos pasos.",
+      ".system-card:nth-of-type(4) .system-note": "Recomendado cuando la decisión aún no está madura o compiten varias opciones.",
+      "#systemes .section-cta p": "¿Está comparando varios escenarios?",
+      "#systemes .section-cta .button": "Comparar opciones",
       "#pre-diagnostic .diagnostic-copy .eyebrow": "Pre-diagnóstico energético",
       "#pre-diagnostic-title": "Aclare su necesidad en pocas preguntas",
-      "#pre-diagnostic .diagnostic-copy > p:not(.eyebrow)": "Responda a algunas preguntas simples para identificar el escenario que debe profundizarse. Este pre-diagnóstico no sustituye un estudio técnico: sirve para preparar un primer intercambio estructurado e independiente.",
+      "#pre-diagnostic .diagnostic-copy > p:not(.eyebrow)": "Responda a unas preguntas sencillas para identificar el escenario que merece explorarse. Este pre-diagnóstico no sustituye un estudio técnico; prepara una primera conversación estructurada.",
       ".diagnostic-assurance span": "Orientación indicativa",
       ".diagnostic-assurance p": "No se solicitan datos personales, no se guarda ninguna respuesta y ningún resultado constituye una garantía técnica o financiera.",
       ".diagnostic-result-kicker": "Orientación indicativa",
-      ".diagnostic-result-note": "Esta orientación es indicativa. No constituye un estudio técnico o financiero completo. Un intercambio permite verificar hipótesis y encuadrar los próximos pasos.",
+      ".diagnostic-result-note": "Esta orientación es indicativa. No constituye un estudio técnico o financiero completo. Una conversación permite verificar hipótesis y encuadrar los próximos pasos.",
       ".diagnostic-result-actions .button-primary": "Hablar de esta orientación",
       "[data-diagnostic-reset]": "Reiniciar el pre-diagnóstico",
       "#services .eyebrow": "Servicios",
-      "#services-title": "Consultoría técnica y estratégica para sus proyectos energéticos",
+      "#services-title": "Asesoría técnica y estratégica para proyectos energéticos",
+      "#services .section-heading p:not(.eyebrow)": "Intervenimos a lo largo de la cadena de decisión energética para convertir preguntas técnicas, financieras y operativas en elecciones más claras.",
+      ".services-grid .info-card:nth-of-type(1) h3": "Asesoría energética",
+      ".services-grid .info-card:nth-of-type(1) p": "Diagnóstico, optimización de usos, priorización de acciones y hoja de ruta de desempeño adaptada al sitio y sus activos.",
+      ".services-grid .info-card:nth-of-type(2) h3": "Sistemas fotovoltaicos",
+      ".services-grid .info-card:nth-of-type(2) p": "Estudios de oportunidad, encuadre técnico, revisión de dimensionamiento y preparación para un despliegue fotovoltaico sólido.",
+      ".services-grid .info-card:nth-of-type(3) h3": "Almacenamiento en baterías",
+      ".services-grid .info-card:nth-of-type(3) p": "Estructuración de opciones con baterías al servicio de la flexibilidad, la resiliencia y la optimización de activos energéticos.",
+      ".services-grid .info-card:nth-of-type(4) h3": "Desarrollo de proyectos",
+      ".services-grid .info-card:nth-of-type(4) p": "Coordinación, revisión de madurez, preparación de inversión y alineación de partes interesadas hasta las decisiones clave.",
       "#apropos .eyebrow": "Acerca de",
-      "#apropos-title": "Un enfoque independiente para estructurar las decisiones energéticas correctas.",
+      "#apropos-title": "Un enfoque independiente para estructurar decisiones energéticas correctas.",
+      "#about-title": "Un enfoque práctico e independiente para decisiones energéticas que deben ser claras, rigurosas y aplicables.",
+      ".about-copy > p:nth-of-type(2)": "Atlas Energie Conseil acompaña a empresas y promotores de proyectos en Marruecos que desean asegurar sus decisiones, mejorar su competitividad energética y desarrollar proyectos sólidos en solar o almacenamiento.",
+      ".about-copy > p:nth-of-type(3)": "Nuestro enfoque conecta los aspectos técnicos, las restricciones de ejecución y la lógica de inversión para que los proyectos avancen con método y claridad.",
+      ".about-pillar:nth-of-type(1) strong": "Análisis estratégico",
+      ".about-pillar:nth-of-type(1) span": "Una lectura estructurada de prioridades energéticas, operativas e industriales.",
+      ".about-pillar:nth-of-type(2) strong": "Despliegue controlado",
+      ".about-pillar:nth-of-type(2) span": "Recomendaciones concretas, robustas y adaptadas al contexto marroquí.",
+      ".visual-panel-about .visual-kicker": "Visión del proyecto",
       "#secteurs .eyebrow": "Sectores objetivo",
       "#secteurs-title": "Entornos donde la energía se convierte en una palanca de competitividad.",
-      "#avantages .eyebrow": "Por qué elegirnos",
+      "#sectors-title": "Asesoría calibrada para sitios exigentes y decisiones de inversión",
+      "#secteurs .section-heading p:not(.eyebrow)": "Nuestras misiones están pensadas para propietarios con proyectos estructurados, empresas intensivas en energía, explotaciones agrícolas, sitios de servicios, infraestructuras críticas y promotores.",
+      ".visual-panel-sectors .visual-kicker": "Sectores objetivo",
+      ".sector-card:nth-of-type(1) h3": "Industria",
+      ".sector-card:nth-of-type(1) p": "Desempeño energético, control de costes e integración de soluciones renovables a escala de sitio.",
+      ".sector-card:nth-of-type(2) h3": "Viviendas, hoteles y escuelas",
+      ".sector-card:nth-of-type(2) p": "Valorización de activos, modernización energética y lectura clara del potencial realista de mejora.",
+      ".sector-card:nth-of-type(3) h3": "Logística e infraestructuras",
+      ".sector-card:nth-of-type(3) p": "Continuidad operativa, resiliencia energética y estructuración de proyectos técnicos complejos.",
+      ".sector-card:nth-of-type(4) h3": "Promotores e inversores",
+      ".sector-card:nth-of-type(4) p": "Apoyo a la viabilidad, preparación de proyectos y maduración de decisiones de inversión.",
+      "#avantages .eyebrow": "Por qué Atlas",
       "#avantages-title": "Un método claro para convertir la energía en una decisión controlada.",
+      "#advantages-title": "Un método exigente para aclarar decisiones y apoyar la ejecución.",
+      ".reason-card:nth-of-type(1) h3": "Visión 360",
+      ".reason-card:nth-of-type(1) p": "Conectamos aspectos técnicos, económicos y operativos para ofrecer una lectura completa y utilizable del proyecto.",
+      ".reason-card:nth-of-type(2) h3": "Enfoque a medida",
+      ".reason-card:nth-of-type(2) p": "Cada misión se encuadra según los objetivos del sitio, las restricciones internas y las ambiciones de crecimiento.",
+      ".reason-card:nth-of-type(3) h3": "Orientación a la ejecución",
+      ".reason-card:nth-of-type(3) p": "Recomendaciones concretas y priorizadas que sus equipos y socios pueden utilizar en la práctica.",
       "#faq .eyebrow": "FAQ energía y decisión",
       "#faq-title": "Preguntas clave antes de decidir",
-      "#faq .section-heading p:not(.eyebrow)": "Antes de iniciar un proyecto solar, de almacenamiento o híbrido, algunas preguntas deben aclararse. Estas respuestas ayudan a entender los retos antes de un primer intercambio.",
+      "#faq .section-heading p:not(.eyebrow)": "Antes de comprometerse con un proyecto solar, de almacenamiento o híbrido, conviene aclarar algunas preguntas. Estas respuestas ayudan a comprender los retos antes de una primera conversación.",
       "#checklist .eyebrow": "Recurso de decisión",
-      "#checklist-title": "Recibir la checklist antes de invertir",
-      "#checklist .checklist-copy > p:not(.eyebrow):not(.checklist-note)": "Una checklist concisa para identificar los puntos a aclarar antes de comparar ofertas solares, de almacenamiento o híbridas en Marruecos. No sustituye un estudio técnico, pero ayuda a preparar una decisión más estructurada.",
-      "#checklist .button-primary": "Solicitar la checklist",
-      "#checklist .checklist-email-link": "Recibir por email",
-      "#checklist .checklist-note": "Envío posible por WhatsApp o email tras un primer mensaje. Sin formulario complejo por ahora.",
-      "#checklist .checklist-preview h3": "Lo que la checklist ayuda a aclarar",
+      "#checklist-title": "Reciba la lista antes de invertir",
+      "#checklist .checklist-copy > p:not(.eyebrow):not(.checklist-note)": "Una lista concisa para identificar qué debe aclararse antes de comparar ofertas solares, de almacenamiento o híbridas en Marruecos. No sustituye un estudio técnico, pero ayuda a preparar una decisión más estructurada.",
+      "#checklist .button-primary": "Solicitar la lista",
+      "#checklist .checklist-email-link": "Recibir por Email",
+      "#checklist .checklist-note": "Disponible por WhatsApp o Email tras un primer mensaje. Sin formulario complejo por ahora.",
+      "#checklist .checklist-preview h3": "Lo que la lista ayuda a aclarar",
+      ".checklist-preview li:nth-child(1)": "Facturas eléctricas y evolución de costes",
+      ".checklist-preview li:nth-child(2)": "Perfil de consumo: día, noche, continuo o variable",
+      ".checklist-preview li:nth-child(3)": "Potencial de autoconsumo solar",
+      ".checklist-preview li:nth-child(4)": "Pertinencia real del almacenamiento en baterías",
+      ".checklist-preview li:nth-child(5)": "Necesidad de continuidad eléctrica o respaldo",
+      ".checklist-preview li:nth-child(6)": "Riesgos de sobredimensionamiento o elección técnica prematura",
+      ".checklist-preview li:nth-child(7)": "Información que preparar para una primera conversación estructurada",
       "#contact .eyebrow": "Contacto",
-      "#contact-title": "Aclaremos su decisión energética con un primer intercambio confidencial.",
-      "#contact .contact-copy > p:not(.eyebrow)": "Intercambio confidencial para calificar su necesidad, aclarar prioridades y definir próximos pasos concretos.",
-      ".contact-note-label": "Primer intercambio",
-      ".contact-note p": "Un marco directo, confidencial y orientado a la decisión para comprender su contexto, sus limitaciones y los arbitrajes que deben asegurarse.",
-      ".footer-brand p": "Consultoría independiente en energía solar, almacenamiento y rendimiento energético en Marruecos.",
+      "#contact-title": "Aclare su decisión energética en una primera conversación confidencial.",
+      "#contact .contact-copy > p:not(.eyebrow)": "Revisamos su necesidad, aclaramos prioridades e identificamos próximos pasos concretos para su proyecto solar, de almacenamiento o desempeño energético.",
+      ".contact-note-label": "Primera conversación",
+      ".contact-note p": "Un marco directo, confidencial y orientado a la decisión para comprender su contexto, sus restricciones y los arbitrajes que conviene asegurar.",
+      ".trust-item:nth-child(1)": "Asesoría independiente",
+      ".trust-item:nth-child(2)": "Análisis estructurado",
+      ".trust-item:nth-child(3)": "Conversación confidencial",
+      ".trust-item:nth-child(4)": "Recomendaciones aplicables",
+      ".contact-card a[data-analytics-event='contact_email_click'] small": "Comparta su contexto y prepare una primera conversación estructurada.",
+      ".contact-card a[data-analytics-event='contact_whatsapp_click'] small": "Inicie rápido con un mensaje preparado.",
+      ".contact-card a[data-analytics-event='contact_linkedin_click'] small": "Perfil profesional y red de referencia.",
+      ".footer-brand p": "Asesoría independiente en energía solar, almacenamiento y desempeño energético en Marruecos.",
+      ".footer-meta > p": "(c) 2026 Atlas Energie Conseil. Todos los derechos reservados.",
+      ".footer-legal-trigger[data-legal-modal='mentions-legales']": "Aviso legal",
+      ".footer-legal-trigger[data-legal-modal='politique-confidentialite']": "Política de privacidad",
+      ".footer-content > a": "Volver arriba",
       "#legal-title": "Aviso legal",
-      "#privacy-title": "Política de privacidad"
+      "#privacy-title": "Política de privacidad",
+      "#mentions-legales .legal-modal-kicker": "Información legal",
+      "#mentions-legales-title": "Aviso legal",
+      "#mentions-legales .legal-modal-panel > p:last-child": "Atlas Energie Conseil es un sitio informativo y de contacto profesional dirigido a propietarios, empresas y promotores de proyectos en Marruecos.",
+      "#politique-confidentialite .legal-modal-kicker": "Privacidad",
+      "#politique-confidentialite-title": "Política de privacidad",
+      "#politique-confidentialite .legal-modal-panel > p:last-child": "La información enviada por Email, WhatsApp o LinkedIn se utiliza únicamente para tratar su solicitud y permanece dentro del marco de nuestros intercambios profesionales."
     },
     "attrs": {
       ".nav-toggle": {
@@ -85,11 +179,29 @@
       ".nav": {
         "aria-label": "Navegación principal"
       },
+      ".visual-panel-about": {
+        "aria-label": "Área visual de presentación"
+      },
+      ".visual-panel-about .media-card-image": {
+        "alt": "Visual de asesoría energética de Atlas Energie Conseil"
+      },
+      ".visual-panel-sectors": {
+        "aria-label": "Área visual de sectores"
+      },
+      ".visual-panel-sectors .media-card-image": {
+        "alt": "Visual de sector industrial e infraestructuras"
+      },
+      ".trust-list": {
+        "aria-label": "Compromisos de confianza"
+      },
       ".faq-list": {
-        "aria-label": "Preguntas frecuentes sobre consultoría energética, solar y almacenamiento"
+        "aria-label": "Preguntas frecuentes sobre asesoría energética, energía solar y almacenamiento"
       },
       ".checklist-preview": {
-        "aria-label": "Vista previa de la checklist"
+        "aria-label": "Vista previa de la lista"
+      },
+      ".footer-legal": {
+        "aria-label": "Información legal"
       },
       ".legal-modal-close": {
         "aria-label": "Cerrar"
@@ -98,37 +210,37 @@
         "content": "es_ES"
       },
       "meta[name='description']": {
-        "content": "Atlas Energie Conseil acompaña a empresas en Marruecos en análisis de rentabilidad, solar, almacenamiento y decisiones energéticas seguras."
+        "content": "Asesoría independiente en energía solar, almacenamiento en baterías y desempeño energético en Marruecos para viviendas, empresas, explotaciones agrícolas, hoteles, escuelas y promotores de proyectos."
       },
       "meta[property='og:title']": {
-        "content": "Atlas Energie Conseil | Consultoría independiente solar y almacenamiento en Marruecos"
+        "content": "Atlas Energie Conseil | Asesoría solar y almacenamiento en Marruecos"
       },
       "meta[property='og:description']": {
-        "content": "Consultoría energética independiente para empresas, promotores e inversores en Marruecos: solar, almacenamiento, rentabilidad y decisiones estructuradas."
+        "content": "Asesoría energética independiente en Marruecos: energía solar, almacenamiento, análisis de rentabilidad y decisiones estructuradas para proyectos reales."
       },
       "meta[property='og:image:alt']": {
-        "content": "Planta solar y almacenamiento de energía en Marruecos"
+        "content": "Planta solar y sistema de almacenamiento de energía en Marruecos"
       },
       "meta[name='twitter:title']": {
-        "content": "Atlas Energie Conseil | Consultoría independiente solar y almacenamiento en Marruecos"
+        "content": "Atlas Energie Conseil | Asesoría solar y almacenamiento en Marruecos"
       },
       "meta[name='twitter:description']": {
-        "content": "Consultoría energética independiente para empresas, promotores e inversores en Marruecos: solar, almacenamiento, rentabilidad y decisiones estructuradas."
+        "content": "Asesoría energética independiente en Marruecos: energía solar, almacenamiento, análisis de rentabilidad y decisiones estructuradas para proyectos reales."
       },
       "meta[name='twitter:image:alt']": {
-        "content": "Planta solar y almacenamiento de energía en Marruecos"
+        "content": "Planta solar y sistema de almacenamiento de energía en Marruecos"
       },
       "#checklist .button-primary": {
-        "href": "https://wa.me/4915788152561?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20la%20checklist%20antes%20de%20invertir%20en%20un%20proyecto%20solar%20o%20de%20almacenamiento%20en%20Marruecos."
+        "href": "https://wa.me/4915788152561?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20la%20lista%20de%20verificaci%C3%B3n%20antes%20de%20invertir%20en%20un%20proyecto%20de%20energ%C3%ADa%20solar%2C%20almacenamiento%20o%20sistema%20h%C3%ADbrido%20en%20Marruecos."
       },
       "#checklist .checklist-email-link": {
-        "href": "mailto:contact@atlasenergieconseil.com?subject=Solicitud%20de%20checklist%20-%20Atlas%20Energie%20Conseil&body=Hola%2C%0D%0A%0D%0AMe%20gustar%C3%ADa%20recibir%20la%20checklist%20antes%20de%20invertir%20en%20un%20proyecto%20solar%20o%20de%20almacenamiento%20en%20Marruecos.%0D%0A%0D%0AGracias%20por%20contactarme."
+        "href": "mailto:contact@atlasenergieconseil.com?subject=Solicitud%20de%20lista%20de%20verificaci%C3%B3n%20-%20Atlas%20Energie%20Conseil&body=Hola%2C%0D%0A%0D%0AMe%20gustar%C3%ADa%20recibir%20la%20lista%20de%20verificaci%C3%B3n%20antes%20de%20invertir%20en%20un%20proyecto%20de%20energ%C3%ADa%20solar%2C%20almacenamiento%20o%20sistema%20h%C3%ADbrido%20en%20Marruecos.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20su%20contacto."
       },
       ".contact-card a[data-analytics-event='contact_email_click']": {
-        "href": "mailto:contact@atlasenergieconseil.com?subject=Solicitud%20de%20primer%20intercambio%20-%20Atlas%20Energie%20Conseil&body=Hola%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20energ%C3%A9tico%20en%20Marruecos.%0D%0A%0D%0AGracias%20por%20contactarme."
+        "href": "mailto:contact@atlasenergieconseil.com?subject=Solicitud%20de%20conversaci%C3%B3n%20sobre%20proyecto%20-%20Atlas%20Energie%20Conseil&body=Hola%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20de%20energ%C3%ADa%20solar%2C%20almacenamiento%20o%20desempe%C3%B1o%20energ%C3%A9tico%20en%20Marruecos.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20su%20contacto."
       },
       ".contact-card a[data-analytics-event='contact_whatsapp_click']": {
-        "href": "https://wa.me/4915788152561?text=Hola%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20energ%C3%A9tico%20%2F%20solar%20%2F%20almacenamiento%20en%20Marruecos."
+        "href": "https://wa.me/4915788152561?text=Hola%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20de%20energ%C3%ADa%20solar%2C%20almacenamiento%20o%20desempe%C3%B1o%20energ%C3%A9tico%20en%20Marruecos."
       }
     }
   },
@@ -136,10 +248,10 @@
     "progress": "{answered} / {total} preguntas completadas",
     "questions": {
       "site": {
-        "label": "¿Qué tipo de sitio desea analizar?",
+        "label": "¿Qué tipo de sitio desea revisar?",
         "options": {
           "industrial": "Sitio industrial",
-          "tertiary": "Inmobiliario y terciario",
+          "tertiary": "Vivienda, hotel o servicios",
           "logistics": "Logística e infraestructuras",
           "investor": "Promotor / inversor",
           "sensitive": "Sitio sensible o aislado"
@@ -148,10 +260,10 @@
       "objective": {
         "label": "¿Cuál es su objetivo principal?",
         "options": {
-          "cost": "Reducir la factura eléctrica",
-          "solar": "Evaluar un proyecto solar",
-          "battery": "Comparar el interés de una batería",
-          "backup": "Asegurar la alimentación",
+          "cost": "Reducir costes eléctricos",
+          "solar": "Revisar un proyecto solar",
+          "battery": "Comparar el valor de una batería",
+          "backup": "Mejorar la continuidad eléctrica",
           "investment": "Preparar una inversión"
         }
       },
@@ -159,117 +271,117 @@
         "label": "¿Cómo describiría su factura eléctrica?",
         "options": {
           "high": "Alta o en aumento",
-          "stable": "Estable pero optimizable",
+          "stable": "Estable pero mejorable",
           "unknown": "Aún no analizada",
           "confirm": "Información por confirmar"
         }
       },
       "consumption": {
-        "label": "¿Su consumo es principalmente…?",
+        "label": "¿Cuándo consume energía principalmente el sitio?",
         "options": {
           "day": "Durante el día",
-          "night": "Por la tarde o noche",
-          "continuous": "Continuo / 24h",
-          "variable": "Variable o desconocido"
+          "night": "Tarde o noche",
+          "continuous": "Continuo / 24 h",
+          "variable": "Variable o no claro aún"
         }
       },
       "battery": {
-        "label": "¿Ya se contempla una batería?",
+        "label": "¿Ya se está considerando almacenamiento en baterías?",
         "options": {
           "yes": "Sí",
           "no": "No",
-          "compare": "A comparar",
-          "unknown": "Aún no lo sé"
+          "compare": "Por comparar",
+          "unknown": "Aún no está claro"
         }
       },
       "continuity": {
-        "label": "¿La continuidad de alimentación es crítica?",
+        "label": "¿La continuidad eléctrica es crítica?",
         "options": {
           "critical": "Sí, crítica",
           "important": "Importante pero secundaria",
-          "low": "No prioritaria",
-          "clarify": "A aclarar"
+          "low": "No es prioritaria",
+          "clarify": "Por aclarar"
         }
       },
       "stage": {
         "label": "¿En qué fase está el proyecto?",
         "options": {
-          "early": "Primera reflexión",
+          "early": "Idea inicial",
           "opportunity": "Estudio de oportunidad",
           "offers": "Ofertas o presupuestos recibidos",
-          "investment": "Inversión a preparar",
-          "optimization": "Sitio existente a optimizar"
+          "investment": "Inversión por preparar",
+          "optimization": "Sitio existente por optimizar"
         }
       }
     },
     "results": {
       "analysis": {
-        "title": "Análisis energético recomendado",
-        "text": "Su proyecto ganaría claridad con un análisis energético independiente antes de comparar soluciones técnicas."
+        "title": "Análisis energético independiente recomendado",
+        "text": "Su proyecto puede beneficiarse de un encuadre independiente antes de comparar soluciones técnicas u ofertas de proveedores."
       },
       "pv": {
-        "title": "Escenario FV sin batería a estudiar",
-        "text": "Un escenario fotovoltaico sin batería podría ser una primera pista a estudiar, especialmente si su consumo se alinea naturalmente con la producción solar."
+        "title": "Escenario PV sin batería por estudiar",
+        "text": "Un escenario fotovoltaico sin batería puede ser una primera opción pertinente para revisar, especialmente si el consumo se alinea naturalmente con la producción solar."
       },
       "battery": {
-        "title": "Escenario FV + batería a comparar",
-        "text": "Un escenario FV + batería merece comparación, siempre que se verifiquen los usos reales del almacenamiento, su dimensionamiento y su coherencia económica."
+        "title": "Escenario PV + batería por comparar",
+        "text": "Un escenario PV + batería merece compararse si se verifican los usos reales del almacenamiento, el dimensionamiento y la lógica económica."
       },
       "backup": {
-        "title": "Resiliencia / backup a analizar",
-        "text": "Su prioridad parece vinculada a la continuidad de actividad. Se recomienda un análisis de resiliencia energética y backup antes de cualquier decisión."
+        "title": "Resiliencia / respaldo por analizar",
+        "text": "Su prioridad parece vinculada a la continuidad de la actividad. Se recomienda analizar resiliencia y respaldo antes de tomar una decisión."
       },
       "exchange": {
-        "title": "Primer intercambio recomendado",
-        "text": "Un primer intercambio permitirá aclarar hipótesis, comparar escenarios y preparar una decisión más segura."
+        "title": "Primera conversación recomendada",
+        "text": "Una primera conversación ayuda a aclarar hipótesis, comparar escenarios y preparar una decisión más segura."
       }
     }
   },
   "faq": {
     "items": [
       {
-        "question": "¿Cuándo un proyecto solar es pertinente para una empresa en Marruecos?",
-        "answer": "Un proyecto solar se vuelve pertinente cuando el perfil de consumo, los costes eléctricos, las superficies disponibles y las limitaciones del sitio permiten una autoconsumo coherente. El análisis debe verificar la rentabilidad y también los límites técnicos y operativos."
+        "question": "¿Cuándo un proyecto solar es pertinente para una empresa o sitio en Marruecos?",
+        "answer": "Un proyecto solar se vuelve pertinente cuando el perfil de consumo, los costes eléctricos, las superficies disponibles y las restricciones del sitio permiten un autoconsumo coherente. El análisis debe revisar la rentabilidad, así como los límites técnicos y operativos."
       },
       {
         "question": "¿Una batería siempre es necesaria con una instalación fotovoltaica?",
-        "answer": "No. Una batería es pertinente solo si responde a un uso claro: desplazar energía, reducir ciertos picos, mejorar la flexibilidad o reforzar la resiliencia. Debe dimensionarse según las necesidades reales del sitio, no añadirse automáticamente."
+        "answer": "No. Una batería es pertinente solo si responde a un uso claro: desplazar energía en el tiempo, reducir ciertos picos, mejorar la flexibilidad o reforzar la resiliencia. Debe dimensionarse según las necesidades reales del sitio, no añadirse automáticamente."
       },
       {
-        "question": "¿Cuál es la diferencia entre autoconsumo solar y almacenamiento en batería?",
-        "answer": "El autoconsumo consiste en utilizar directamente la electricidad solar producida en el sitio. El almacenamiento conserva parte de esa energía para otro momento o uso específico. Ambas lógicas pueden ser complementarias, pero no responden a la misma necesidad."
+        "question": "¿Cuál es la diferencia entre autoconsumo solar y almacenamiento en baterías?",
+        "answer": "El autoconsumo consiste en utilizar directamente la electricidad solar producida en el sitio. El almacenamiento conserva parte de esa energía para otro momento o un uso específico. Ambos enfoques pueden complementarse, pero no responden a la misma necesidad."
       },
       {
         "question": "¿Por qué realizar un análisis energético antes de pedir presupuestos?",
-        "answer": "Un análisis independiente permite aclarar objetivos, comparar escenarios y evitar basar la decisión únicamente en una oferta comercial. Ayuda a encuadrar el proyecto antes de comprometer presupuestos, socios o un calendario."
+        "answer": "Un análisis independiente permite aclarar objetivos, comparar escenarios y evitar que la decisión se base solo en una oferta comercial. Ayuda a encuadrar el proyecto antes de comprometer presupuestos, socios o un calendario."
       },
       {
-        "question": "¿Cómo asegurar la alimentación de un sitio sensible o industrial?",
-        "answer": "La seguridad depende de las cargas prioritarias, la sensibilidad a cortes, la red, el papel eventual de una batería y un grupo electrógeno. Un enfoque estructurado permite comparar escenarios de backup y resiliencia antes de decidir."
+        "question": "¿Cómo asegurar la alimentación eléctrica de un sitio sensible o industrial?",
+        "answer": "La continuidad depende de las cargas prioritarias, la sensibilidad a cortes, las condiciones de red y el posible papel de una batería o un generador. Un enfoque estructurado permite comparar escenarios de respaldo y resiliencia antes de decidir."
       },
       {
-        "question": "¿Atlas Energie Conseil instala equipos solares o baterías?",
-        "answer": "Atlas Energie Conseil interviene como consultor independiente. El objetivo es analizar, comparar, estructurar y asegurar decisiones energéticas. El acompañamiento no se basa en la venta ni en el suministro de equipos."
+        "question": "¿Atlas Energie Conseil instala paneles solares o baterías?",
+        "answer": "No. Atlas Energie Conseil actúa como asesor independiente. El objetivo es analizar, comparar, estructurar y asegurar decisiones energéticas. El acompañamiento no se basa en la venta ni en el suministro de equipos."
       },
       {
         "question": "¿A quién se dirige el acompañamiento de Atlas Energie Conseil?",
-        "answer": "El acompañamiento se dirige a empresas industriales, sitios terciarios, actores logísticos, infraestructuras, promotores, inversores y responsables de proyectos que desean aclarar una decisión solar, de almacenamiento o de rendimiento energético en Marruecos."
+        "answer": "El acompañamiento está pensado para empresas, propietarios de viviendas con proyectos estructurados, explotaciones agrícolas, hoteles, escuelas, sitios de servicios, industrias, promotores, inversores y responsables de proyectos que desean aclarar una decisión solar, de almacenamiento o desempeño energético en Marruecos."
       },
       {
-        "question": "¿Qué ocurre durante el primer intercambio?",
-        "answer": "El primer intercambio sirve para comprender el contexto del sitio, los objetivos, las limitaciones, el nivel de madurez del proyecto y las decisiones que deben asegurarse. Permite identificar próximos pasos útiles sin iniciar inmediatamente un estudio completo."
+        "question": "¿Qué ocurre durante la primera conversación?",
+        "answer": "La primera conversación sirve para comprender el contexto del sitio, los objetivos, las restricciones, la madurez del proyecto y las decisiones que conviene asegurar. Permite identificar próximos pasos útiles sin comprometerse de inmediato con un estudio completo."
       },
       {
-        "question": "¿Qué elementos son útiles para analizar un sitio energético?",
-        "answer": "Los elementos útiles pueden incluir facturas eléctricas, perfiles de consumo, limitaciones del sitio, superficies disponibles, objetivos de continuidad, ofertas recibidas y prioridades de inversión. La información disponible orienta el nivel de análisis necesario."
+        "question": "¿Qué información es útil para analizar un sitio energético?",
+        "answer": "La información útil puede incluir facturas eléctricas, perfiles de consumo, restricciones del sitio, superficies disponibles, objetivos de continuidad, ofertas recibidas y prioridades de inversión. La información disponible orienta el nivel de análisis necesario."
       },
       {
         "question": "¿El pre-diagnóstico sustituye un estudio técnico?",
-        "answer": "No. El pre-diagnóstico ofrece una primera orientación indicativa. No sustituye un estudio técnico, económico o financiero completo. Sirve para preparar un intercambio más estructurado e identificar el escenario a profundizar."
+        "answer": "No. El pre-diagnóstico ofrece una primera orientación indicativa. No sustituye un estudio técnico, económico o financiero completo. Sirve para preparar una conversación más estructurada e identificar el escenario que conviene explorar."
       }
     ]
   },
   "schema": {
-    "professionalDescription": "Consultoría independiente en energía solar, almacenamiento, rendimiento energético y estructuración de proyectos en Marruecos."
+    "professionalDescription": "Asesoría independiente en energía solar, almacenamiento en baterías, desempeño energético y estructuración de proyectos en Marruecos."
   }
 }
