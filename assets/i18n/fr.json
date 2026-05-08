@@ -28,17 +28,17 @@
       ".nav a[href='#avantages']": "Pourquoi nous choisir",
       ".nav a[href='#contact']": "Contact",
       ".hero-badge": "Conseil indépendant • Solaire • Stockage • Maroc",
-      "#hero-title": "Sécurisez vos décisions solaires, stockage et performance énergétique au Maroc",
+      "#hero-title": "Sécurisez vos décisions en solaire, stockage et performance énergétique au Maroc",
       ".hero-copy > p:not(.hero-badge)": "Atlas Energie Conseil accompagne les entreprises industrielles, sites tertiaires, développeurs et investisseurs dans l’analyse de rentabilité, la structuration technique et la sécurisation de leurs décisions énergétiques.",
-      ".hero-actions .button-primary": "Parler de votre projet",
+      ".hero-actions .button-primary": "Parlons de votre projet",
       ".hero-actions .button-secondary": "Voir les situations d’intervention",
       "#situations .eyebrow": "Vos enjeux énergétiques",
       "#situations-title": "Les situations où nous intervenons",
-      "#situations .section-heading p:not(.eyebrow)": "Nous intervenons lorsque la décision énergétique doit être clarifiée avant d’engager des budgets, des partenaires ou un calendrier de déploiement.",
+      "#situations .section-heading p:not(.eyebrow)": "Nous intervenons lorsque la décision énergétique doit être clarifiée avant de vous engager dans des budgets, des partenaires ou un calendrier de déploiement.",
       ".situation-card:nth-of-type(1) h3": "Facture électrique élevée",
       ".situation-card:nth-of-type(1) p": "Identifier les leviers de réduction des coûts et hiérarchiser les actions réellement rentables.",
       ".situation-card:nth-of-type(2) h3": "Rentabilité solaire incertaine",
-      ".situation-card:nth-of-type(2) p": "Évaluer le potentiel photovoltaïque, les hypothèses économiques et les conditions de décision.",
+      ".situation-card:nth-of-type(2) p": "Évaluer le potentiel photovoltaïque, les hypothèses économiques et les critères de décision.",
       ".situation-card:nth-of-type(3) h3": "Batterie : oui ou non ?",
       ".situation-card:nth-of-type(3) p": "Clarifier l’intérêt du stockage selon vos usages, votre profil de consommation et vos objectifs de résilience.",
       ".situation-card:nth-of-type(4) h3": "Sécurisation de l’alimentation",
@@ -52,7 +52,7 @@
       "#systemes .eyebrow": "Scénarios de décision",
       "#systemes-title": "Quel système pour votre site ?",
       "#systems-title": "Quel système pour votre site ?",
-      "#systemes .section-heading p:not(.eyebrow)": "Chaque site présente un profil de consommation, un niveau de risque et une logique d’investissement différents. Atlas Energie Conseil vous aide à comparer les scénarios avant d’engager une solution technique ou financière.",
+      "#systemes .section-heading p:not(.eyebrow)": "Chaque site présente un profil de consommation, un niveau de risque et une logique d’investissement différents. Atlas Energie Conseil vous aide à comparer les scénarios avant de vous engager dans une solution technique ou financière.",
       ".system-detail:nth-of-type(2) .system-label": "Adapté pour",
       ".system-detail:nth-of-type(3) .system-label": "Atlas vérifie",
       ".system-card:nth-of-type(1) h3": "PV sans batterie",
@@ -63,16 +63,16 @@
       ".system-card:nth-of-type(2) h3": "PV + batterie",
       ".system-card:nth-of-type(2) .system-description": "Un scénario combinant production solaire et stockage pour améliorer l’autoconsommation, la flexibilité et la gestion des pics.",
       ".system-card:nth-of-type(2) .system-detail:nth-of-type(2) p": "Pour les sites avec pics de puissance, besoins de flexibilité, objectifs d’autonomie partielle ou intérêt pour le stockage.",
-      ".system-card:nth-of-type(2) .system-detail:nth-of-type(3) p": "Dimensionnement batterie, cycles d’usage, arbitrage économique, réduction des pointes, résilience attendue et limites opérationnelles.",
+      ".system-card:nth-of-type(2) .system-detail:nth-of-type(3) p": "Dimensionnement de la batterie, cycles d’usage, arbitrage économique, réduction des pointes, résilience attendue et limites opérationnelles.",
       ".system-card:nth-of-type(2) .system-note": "Pertinent uniquement si la batterie répond à un usage mesurable, pas comme simple ajout technologique.",
       ".system-card:nth-of-type(3) h3": "PV + batterie + groupe électrogène",
-      ".system-card:nth-of-type(3) .system-description": "Une architecture hybride pour les sites où la continuité d’alimentation, le backup ou la résilience énergétique sont critiques.",
+      ".system-card:nth-of-type(3) .system-description": "Une architecture hybride pour les sites où la continuité d’alimentation, l’alimentation de secours ou la résilience énergétique sont critiques.",
       ".system-card:nth-of-type(3) .system-detail:nth-of-type(2) p": "Pour les sites industriels, logistiques ou isolés exposés aux coupures, aux contraintes réseau ou aux exigences de continuité.",
-      ".system-card:nth-of-type(3) .system-detail:nth-of-type(3) p": "Priorités de charge, stratégie backup, coordination solaire-stockage-groupe, niveaux de sécurité, coûts d’exploitation et scénarios de secours.",
+      ".system-card:nth-of-type(3) .system-detail:nth-of-type(3) p": "Priorités de charge, stratégie de secours, coordination solaire-stockage-groupe, niveaux de sécurité, coûts d’exploitation et scénarios de secours.",
       ".system-card:nth-of-type(3) .system-note": "À analyser lorsque l’enjeu principal dépasse la seule économie d’énergie et touche à la continuité d’activité.",
       ".system-card:nth-of-type(4) h3": "Analyse énergétique avant investissement",
       ".system-card:nth-of-type(4) .system-description": "Une mission indépendante pour clarifier les options avant de s’engager dans un projet solaire, stockage ou hybride.",
-      ".system-card:nth-of-type(4) .system-detail:nth-of-type(2) p": "Pour les dirigeants, investisseurs ou porteurs de projets qui souhaitent valider les hypothèses avant budget, partenaire ou déploiement.",
+      ".system-card:nth-of-type(4) .system-detail:nth-of-type(2) p": "Pour les dirigeants, investisseurs ou porteurs de projets qui souhaitent valider les hypothèses avant de valider un budget, un partenaire ou un déploiement.",
       ".system-card:nth-of-type(4) .system-detail:nth-of-type(3) p": "Consommation, objectifs, rentabilité, risques techniques, scénarios comparés, priorités d’investissement et prochaines étapes.",
       ".system-card:nth-of-type(4) .system-note": "Recommandé lorsque la décision n’est pas encore mûre ou que plusieurs options sont en concurrence.",
       "#systemes .section-cta p": "Vous hésitez entre plusieurs scénarios ?",
@@ -94,12 +94,12 @@
       ".services-grid .info-card:nth-of-type(2) h3": "Solaire photovoltaïque",
       ".services-grid .info-card:nth-of-type(2) p": "Études d’opportunité, cadrage technique, dimensionnement et préparation au déploiement de solutions photovoltaïques robustes.",
       ".services-grid .info-card:nth-of-type(3) h3": "Stockage d’énergie",
-      ".services-grid .info-card:nth-of-type(3) p": "Structuration de solutions batteries au service de la flexibilité, de la résilience et de l’optimisation des actifs énergétiques.",
+      ".services-grid .info-card:nth-of-type(3) p": "Structuration de solutions de stockage par batteries au service de la flexibilité, de la résilience et de l’optimisation des actifs énergétiques.",
       ".services-grid .info-card:nth-of-type(4) h3": "Développement de projets",
       ".services-grid .info-card:nth-of-type(4) p": "Coordination, maturation de projet, préparation à l’investissement et alignement des parties prenantes jusqu’aux décisions clés.",
       "#apropos .eyebrow": "À propos",
       "#apropos-title": "Une approche indépendante pour structurer les bonnes décisions énergétiques.",
-      "#about-title": "Une expertise conçue pour les environnements où la décision énergétique doit être rigoureuse, claire et actionnable.",
+      "#about-title": "Une expertise conçue pour les environnements où la décision énergétique doit être rigoureuse, claire et directement exploitable.",
       ".about-copy > p:nth-of-type(2)": "Atlas Energie Conseil accompagne les entreprises marocaines qui souhaitent sécuriser leurs arbitrages, renforcer leur compétitivité énergétique et développer des actifs solides dans le solaire et le stockage.",
       ".about-copy > p:nth-of-type(3)": "Notre approche relie les enjeux techniques, les contraintes d’exécution et la logique d’investissement afin de faire progresser les projets avec méthode, exigence et lisibilité.",
       ".about-pillar:nth-of-type(1) strong": "Analyse stratégique",
@@ -109,7 +109,7 @@
       ".visual-panel-about .visual-kicker": "Vision projet",
       "#secteurs .eyebrow": "Secteurs ciblés",
       "#secteurs-title": "Des environnements où l’énergie devient un levier de compétitivité.",
-      "#sectors-title": "Des interventions calibrées pour des contextes exigeants, industriels et capitalistiques.",
+      "#sectors-title": "Des interventions calibrées pour des contextes industriels exigeants et à forte intensité capitalistique.",
       "#secteurs .section-heading p:not(.eyebrow)": "Nos missions s’adressent aux entreprises à forte intensité énergétique, aux acteurs du tertiaire, aux infrastructures critiques et aux développeurs de projets.",
       ".visual-panel-sectors .visual-kicker": "Secteurs cibles",
       ".sector-card:nth-of-type(1) h3": "Industrie",
@@ -136,14 +136,14 @@
       "#checklist-title": "Recevoir la checklist avant d’investir",
       "#checklist .checklist-copy > p:not(.eyebrow):not(.checklist-note)": "Une checklist concise pour identifier les points à clarifier avant de comparer des offres solaires, stockage ou hybrides au Maroc. Elle ne remplace pas une étude technique, mais aide à préparer une décision plus structurée.",
       "#checklist .button-primary": "Demander la checklist",
-      "#checklist .checklist-email-link": "Recevoir par email",
-      "#checklist .checklist-note": "Envoi possible par WhatsApp ou email après un premier message. Aucun formulaire complexe pour le moment.",
+      "#checklist .checklist-email-link": "Recevoir par e-mail",
+      "#checklist .checklist-note": "Envoi possible par WhatsApp ou e-mail après un premier message. Aucun formulaire complexe pour le moment.",
       "#checklist .checklist-preview h3": "Ce que la checklist vous aide à clarifier",
       ".checklist-preview li:nth-child(1)": "Facture électrique et évolution des coûts",
       ".checklist-preview li:nth-child(2)": "Profil de consommation : journée, nuit, continu ou variable",
       ".checklist-preview li:nth-child(3)": "Potentiel d’autoconsommation solaire",
-      ".checklist-preview li:nth-child(4)": "Pertinence réelle du stockage batterie",
-      ".checklist-preview li:nth-child(5)": "Besoin de continuité d’alimentation ou de backup",
+      ".checklist-preview li:nth-child(4)": "Pertinence réelle du stockage par batterie",
+      ".checklist-preview li:nth-child(5)": "Besoin de continuité d’alimentation ou de secours",
       ".checklist-preview li:nth-child(6)": "Risques de surdimensionnement ou de choix prématuré",
       ".checklist-preview li:nth-child(7)": "Informations à préparer pour un premier échange structuré",
       "#contact .eyebrow": "Contact",
@@ -154,7 +154,8 @@
       ".trust-item:nth-child(1)": "Conseil indépendant",
       ".trust-item:nth-child(2)": "Analyse structurée",
       ".trust-item:nth-child(3)": "Échange confidentiel",
-      ".trust-item:nth-child(4)": "Recommandations actionnables",
+      ".trust-item:nth-child(4)": "Recommandations concrètes",
+      ".contact-card a[data-analytics-event='contact_email_click'] .contact-item-kicker": "E-mail",
       ".contact-card a[data-analytics-event='contact_email_click'] small": "Pour présenter votre contexte et préparer un premier échange structuré.",
       ".contact-card a[data-analytics-event='contact_whatsapp_click'] small": "Pour initier rapidement une discussion avec un message déjà préparé.",
       ".contact-card a[data-analytics-event='contact_linkedin_click'] small": "Profil professionnel et réseau de référence.",
@@ -170,7 +171,7 @@
       "#mentions-legales .legal-modal-panel > p:last-child": "Atlas Energie Conseil est un site vitrine d’information et de prise de contact professionnelle destiné aux entreprises et porteurs de projets au Maroc.",
       "#politique-confidentialite .legal-modal-kicker": "Confidentialité",
       "#politique-confidentialite-title": "Politique de confidentialité",
-      "#politique-confidentialite .legal-modal-panel > p:last-child": "Les informations transmises via email, WhatsApp ou LinkedIn sont utilisées uniquement pour traiter votre demande et rester strictement dans le cadre de nos échanges professionnels."
+      "#politique-confidentialite .legal-modal-panel > p:last-child": "Les informations transmises via e-mail, WhatsApp ou LinkedIn sont utilisées uniquement pour traiter votre demande et rester strictement dans le cadre de nos échanges professionnels."
     },
     "attrs": {
       ".nav-toggle": {
@@ -263,7 +264,7 @@
           "cost": "Réduire la facture électrique",
           "solar": "Évaluer un projet solaire",
           "battery": "Comparer l’intérêt d’une batterie",
-          "backup": "Sécuriser l’alimentation",
+          "backup": "Sécuriser l’alimentation de secours",
           "investment": "Préparer un investissement"
         }
       },
@@ -281,7 +282,7 @@
         "options": {
           "day": "En journée",
           "night": "Le soir ou la nuit",
-          "continuous": "Continue / 24h",
+          "continuous": "Continue / 24 h",
           "variable": "Variable ou inconnue"
         }
       },
@@ -328,8 +329,8 @@
         "text": "Un scénario PV + batterie mérite d’être comparé, à condition de vérifier les usages réels du stockage, son dimensionnement et sa cohérence économique."
       },
       "backup": {
-        "title": "Résilience / backup à analyser",
-        "text": "Votre priorité semble liée à la continuité d’activité. Une analyse de résilience énergétique et de backup est recommandée avant toute décision."
+        "title": "Résilience / secours à analyser",
+        "text": "Votre priorité semble liée à la continuité d’activité. Une analyse de résilience énergétique et d’alimentation de secours est recommandée avant toute décision."
       },
       "exchange": {
         "title": "Premier échange recommandé",
@@ -348,16 +349,16 @@
         "answer": "Non. Une batterie n’est pertinente que si elle répond à un usage clair : décaler l’énergie, réduire certains pics, améliorer la flexibilité ou renforcer la résilience. Elle doit être dimensionnée selon les besoins réels du site, pas ajoutée automatiquement."
       },
       {
-        "question": "Quelle est la différence entre autoconsommation solaire et stockage batterie ?",
+        "question": "Quelle est la différence entre autoconsommation solaire et stockage par batterie ?",
         "answer": "L’autoconsommation consiste à utiliser directement l’électricité solaire produite sur site. Le stockage permet de conserver une partie de cette énergie pour un autre moment ou un usage spécifique. Les deux logiques peuvent être complémentaires, mais elles ne répondent pas au même besoin."
       },
       {
         "question": "Pourquoi réaliser une analyse énergétique avant de demander des devis ?",
-        "answer": "Une analyse indépendante permet de clarifier les objectifs, comparer les scénarios et éviter de baser la décision uniquement sur une offre commerciale. Elle aide à cadrer le projet avant d’engager des budgets, des partenaires ou un calendrier de déploiement."
+        "answer": "Une analyse indépendante permet de clarifier les objectifs, comparer les scénarios et éviter de baser la décision uniquement sur une offre commerciale. Elle aide à cadrer le projet avant de vous engager dans des budgets, des partenaires ou un calendrier de déploiement."
       },
       {
         "question": "Comment sécuriser l’alimentation d’un site sensible ou industriel ?",
-        "answer": "La sécurisation dépend des charges prioritaires, de la sensibilité aux coupures, du réseau, du rôle éventuel d’une batterie et d’un groupe électrogène. Une approche structurée permet de comparer les scénarios de backup et de résilience avant décision."
+        "answer": "La sécurisation dépend des charges prioritaires, de la sensibilité aux coupures, du réseau, du rôle éventuel d’une batterie et d’un groupe électrogène. Une approche structurée permet de comparer les scénarios de secours et de résilience avant décision."
       },
       {
         "question": "Atlas Energie Conseil installe-t-il des équipements solaires ou batteries ?",
