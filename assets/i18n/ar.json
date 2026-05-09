@@ -33,10 +33,10 @@
       ".hero-actions .button-primary": "ناقش مشروعك",
       ".hero-actions .button-secondary": "اطّلع على الحالات",
       "#situations .eyebrow": "تحدياتك الطاقية",
-      "#situations-title": "أين نساعدك",
+      "#situations-title": "الحالات التي نساعد فيها",
       "#situations .section-heading p:not(.eyebrow)": "نتدخل عندما يحتاج القرار المتعلق بالطاقة إلى توضيح قبل الالتزام بميزانية أو شريك أو جدول تنفيذ.",
       ".situation-card:nth-of-type(1) h3": "فاتورة كهرباء مرتفعة",
-      ".situation-card:nth-of-type(1) p": "تحديد رافعات خفض التكاليف وترتيب الإجراءات التي تستحق الدراسة فعلا.",
+      ".situation-card:nth-of-type(1) p": "تحديد رافعات خفض التكاليف وترتيب الإجراءات التي تستحق الدراسة فعلًا.",
       ".situation-card:nth-of-type(2) h3": "جدوى مشروع شمسي غير واضحة",
       ".situation-card:nth-of-type(2) p": "مراجعة الإمكانات الشمسية والفرضيات الاقتصادية وشروط القرار السليم.",
       ".situation-card:nth-of-type(3) h3": "البطارية: مفيدة أم لا؟",
@@ -59,7 +59,7 @@
       ".system-card:nth-of-type(1) .system-description": "خيار كهروضوئي يركز على خفض تكلفة الكهرباء وتحسين الاستهلاك الذاتي.",
       ".system-card:nth-of-type(1) .system-detail:nth-of-type(2) p": "الشركات أو المواقع ذات الاستهلاك المنتظم خلال النهار، التي تريد خفض التكاليف دون تعقيد النظام.",
       ".system-card:nth-of-type(1) .system-detail:nth-of-type(3) p": "منحنى الحمل، الإمكانات الشمسية، معدل الاستهلاك الذاتي، الجدوى، قيود الموقع والانسجام الاقتصادي.",
-      ".system-card:nth-of-type(1) .system-note": "خيار يستحق الدراسة غالبا عندما يتوافق الاستهلاك طبيعيا مع ساعات الإنتاج الشمسي.",
+      ".system-card:nth-of-type(1) .system-note": "خيار يستحق الدراسة غالبًا عندما يتوافق الاستهلاك طبيعيا مع ساعات الإنتاج الشمسي.",
       ".system-card:nth-of-type(2) h3": "PV + بطارية",
       ".system-card:nth-of-type(2) .system-description": "سيناريو يجمع الإنتاج الشمسي والتخزين لتحسين الاستهلاك الذاتي والمرونة وتدبير الذروات.",
       ".system-card:nth-of-type(2) .system-detail:nth-of-type(2) p": "مواقع لديها ذروات قدرة أو حاجة إلى مرونة أو أهداف استقلالية جزئية أو اهتمام واضح بالتخزين.",
@@ -74,7 +74,7 @@
       ".system-card:nth-of-type(4) .system-description": "مهمة مستقلة لتوضيح الخيارات قبل الالتزام بمشروع شمسي أو تخزين أو نظام هجين.",
       ".system-card:nth-of-type(4) .system-detail:nth-of-type(2) p": "المديرون والمستثمرون وحاملو المشاريع الذين يحتاجون إلى اختبار الفرضيات قبل الميزانية أو اختيار الشريك أو التنفيذ.",
       ".system-card:nth-of-type(4) .system-detail:nth-of-type(3) p": "الاستهلاك، الأهداف، الجدوى، المخاطر التقنية، السيناريوهات المقارنة، أولويات الاستثمار والخطوات المقبلة.",
-      ".system-card:nth-of-type(4) .system-note": "موصى به عندما لا يكون القرار ناضجا بعد أو عندما تتنافس عدة خيارات.",
+      ".system-card:nth-of-type(4) .system-note": "موصى به عندما لا يكون القرار ناضجًا بعد أو عندما تتنافس عدة خيارات.",
       "#systemes .section-cta p": "هل تقارن بين عدة سيناريوهات؟",
       "#systemes .section-cta .button": "قارن الخيارات باستقلالية",
       "#pre-diagnostic .diagnostic-copy .eyebrow": "تشخيص طاقي أولي",
@@ -153,7 +153,7 @@
       ".contact-note p": "إطار مهني وسري وموجه للقرار لفهم سياقك وقيودك والمفاضلات التي يجب تأمينها.",
       ".trust-item:nth-child(1)": "استشارة مستقلة",
       ".trust-item:nth-child(2)": "تحليل منظم",
-      ".trust-item:nth-child(3)": "تبادل سري",
+      ".trust-item:nth-child(3)": "تبادل مهني وسري",
       ".trust-item:nth-child(4)": "توصيات قابلة للتنفيذ",
       ".contact-card a[data-analytics-event='contact_email_click'] .contact-item-kicker": "البريد الإلكتروني",
       ".contact-card a[data-analytics-event='contact_email_click'] small": "شارك سياقك وحضّر أول نقاش منظم.",
@@ -322,7 +322,7 @@
       },
       "pv": {
         "title": "سيناريو PV بدون بطارية للدراسة",
-        "text": "قد يكون سيناريو الطاقة الشمسية بدون بطارية خيارا أوليا جيدا للمراجعة، خاصة إذا كان الاستهلاك متوافقا طبيعيا مع الإنتاج الشمسي."
+        "text": "قد يكون سيناريو الطاقة الشمسية بدون بطارية خيارًا أوليًا جيدًا للمراجعة، خاصة إذا كان الاستهلاك متوافقًا طبيعيا مع الإنتاج الشمسي."
       },
       "battery": {
         "title": "سيناريو PV + بطارية للمقارنة",

@@ -134,7 +134,7 @@
       "#faq .section-heading p:not(.eyebrow)": "Avant d’engager un projet solaire, stockage ou hybride, certaines questions doivent être clarifiées. Ces réponses vous aident à mieux comprendre les enjeux avant un premier échange.",
       "#checklist .eyebrow": "Ressource de décision",
       "#checklist-title": "Recevoir la checklist avant d’investir",
-      "#checklist .checklist-copy > p:not(.eyebrow):not(.checklist-note)": "Une checklist concise pour identifier les points à clarifier avant de comparer des offres solaires, stockage ou hybrides au Maroc. Elle ne remplace pas une étude technique, mais aide à préparer une décision plus structurée.",
+      "#checklist .checklist-copy > p:not(.eyebrow):not(.checklist-note)": "Une checklist concise pour identifier les points à clarifier avant de comparer des offres solaires, de stockage ou hybrides au Maroc. Elle ne remplace pas une étude technique, mais aide à préparer une décision plus structurée.",
       "#checklist .button-primary": "Demander la checklist",
       "#checklist .checklist-email-link": "Recevoir par e-mail",
       "#checklist .checklist-note": "Envoi possible par WhatsApp ou e-mail après un premier message. Aucun formulaire complexe pour le moment.",

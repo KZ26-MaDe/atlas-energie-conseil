@@ -121,7 +121,7 @@
       ".sector-card:nth-of-type(4) h3": "Developers & investors",
       ".sector-card:nth-of-type(4) p": "Support for feasibility, project preparation and the maturation of investment decisions.",
       "#avantages .eyebrow": "Why Atlas",
-      "#avantages-title": "A clear method to turn energy into a controlled decision.",
+      "#avantages-title": "A clear method to turn energy questions into well-framed decisions.",
       "#advantages-title": "A demanding method designed to clarify decisions and support execution.",
       ".reason-card:nth-of-type(1) h3": "360° view",
       ".reason-card:nth-of-type(1) p": "We connect technical, economic and operational issues to provide a complete, usable assessment of the project.",
@@ -272,7 +272,7 @@
         "label": "How would you describe your electricity bill?",
         "options": {
           "high": "High or increasing",
-          "stable": "Stable but could improve",
+          "stable": "Stable but still high",
           "unknown": "Not yet analyzed",
           "confirm": "Information to confirm"
         }
