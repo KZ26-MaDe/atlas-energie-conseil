@@ -4,9 +4,9 @@ Site one-page premium en `HTML`, `CSS` et `JavaScript` pour Atlas Energie Consei
 
 ## Version actuelle
 
-La version de référence actuelle est `v1.8.0`.
+La version de référence actuelle est `v2.0.0`.
 
-Cette version ajoute un PDF professionnel de checklist pour préparer les investissements solaires, stockage et hybrides.
+La branche `feature/v2.3.0-multilingual-seo-urls` prépare des URLs multilingues crawlables pour le SEO : `/fr/`, `/en/`, `/ar/` et `/es/`.
 
 ## Stack
 
@@ -16,7 +16,10 @@ Cette version ajoute un PDF professionnel de checklist pour préparer les invest
 - `assets/images`
 - `assets/video`
 - `assets/docs`
+- `assets/i18n`
 - `assets/favicon.svg`
+- `fr/`, `en/`, `ar/`, `es/`
+- `tools/build_language_pages.py`
 
 ## Structure du projet
 
@@ -25,7 +28,13 @@ atlas-energie-conseil/
 ├── assets/
 │   ├── favicon.svg
 │   ├── images/
+│   ├── i18n/
 │   └── video/
+├── fr/
+├── en/
+├── ar/
+├── es/
+├── tools/
 ├── index.html
 ├── style.css
 ├── script.js
@@ -72,9 +81,24 @@ Le projet est statique et peut être déployé facilement sur :
 - Vercel
 - n’importe quel hébergement statique HTTPS
 
+## Génération des pages multilingues
+
+Les pages statiques crawlables sont générées depuis `index.html` et les fichiers JSON dans `assets/i18n/`.
+
+```powershell
+python tools/build_language_pages.py
+```
+
+Le script produit :
+
+- `fr/index.html`
+- `en/index.html`
+- `ar/index.html`
+- `es/index.html`
+
 ## Notes de maintenance
 
-- Garder les chemins d’assets relatifs.
+- Garder les chemins d’assets root-relatifs pour que les pages sous `/fr/`, `/en/`, `/ar/` et `/es/` chargent correctement.
 - Ne pas travailler directement sur `main`.
 - Documenter chaque release dans [CHANGELOG.md](C:/Users/zergo/.codex/atlas-energie-conseil/CHANGELOG.md).
 - Suivre le processus décrit dans [RELEASE_PROCESS.md](C:/Users/zergo/.codex/atlas-energie-conseil/RELEASE_PROCESS.md).

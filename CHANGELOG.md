@@ -6,6 +6,16 @@ Le format suit une logique simple inspirée de Keep a Changelog et du versioning
 
 ## [Unreleased]
 
+### Added
+
+- Prepared crawlable multilingual SEO URLs for `/fr/`, `/en/`, `/ar/` and `/es/`.
+- Added a local generator for static language pages based on `index.html` and `assets/i18n/*.json`.
+
+### Changed
+
+- Updated the language switcher to use real language URLs while keeping existing GA4 language tracking.
+- Updated sitemap planning to list the canonical language URLs.
+
 ### Planned
 
 - Optimisation réelle des assets médias lourds

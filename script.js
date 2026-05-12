@@ -22,6 +22,12 @@ const faqSchema = document.getElementById("schema-faq");
 const DEFAULT_LANGUAGE = "fr";
 const SUPPORTED_LANGUAGES = ["fr", "en", "ar", "es"];
 const LANGUAGE_STORAGE_KEY = "atlas-language";
+const LANGUAGE_URLS = {
+  fr: "/fr/",
+  en: "/en/",
+  ar: "/ar/",
+  es: "/es/"
+};
 
 const translationCache = {};
 let activeTranslations = {};
@@ -67,6 +73,21 @@ const translate = (path, params = {}) => {
   const value = getNestedValue(activeTranslations, path) ?? getNestedValue(translationCache[DEFAULT_LANGUAGE], path);
   return formatTranslation(value, params);
 };
+
+const getUrlLanguage = () => {
+  const firstPathSegment = window.location.pathname.split("/").filter(Boolean)[0];
+  return SUPPORTED_LANGUAGES.includes(firstPathSegment) ? firstPathSegment : "";
+};
+
+const getInitialLanguage = () => getUrlLanguage() || DEFAULT_LANGUAGE;
+
+const getLanguageUrl = (language) => {
+  const normalizedLanguage = SUPPORTED_LANGUAGES.includes(language) ? language : DEFAULT_LANGUAGE;
+  return `${LANGUAGE_URLS[normalizedLanguage]}${window.location.hash || ""}`;
+};
+
+const getCanonicalUrl = () =>
+  document.querySelector("link[rel='canonical']")?.getAttribute("href") || "https://atlasenergieconseil.com/fr/";
 
 const safeQueryAll = (selector) => {
   try {
@@ -237,7 +258,7 @@ const updateStructuredData = () => {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       name: "Atlas Energie Conseil",
-      url: "https://atlasenergieconseil.com/",
+      url: getCanonicalUrl(),
       email: "contact@atlasenergieconseil.com",
       description: activeTranslations.schema?.professionalDescription ?? translate("meta.description"),
       areaServed: {
@@ -270,9 +291,18 @@ const updateStructuredData = () => {
 
 const updateLanguageControls = () => {
   languageButtons.forEach((button) => {
-    const isActive = button.getAttribute("data-language-option") === activeLanguage;
+    const language = button.getAttribute("data-language-option");
+    const isActive = language === activeLanguage;
+    if (language && button instanceof HTMLAnchorElement) {
+      button.setAttribute("href", getLanguageUrl(language));
+    }
     button.classList.toggle("is-active", isActive);
     button.setAttribute("aria-pressed", String(isActive));
+    if (isActive) {
+      button.setAttribute("aria-current", "page");
+    } else {
+      button.removeAttribute("aria-current");
+    }
   });
 };
 
@@ -303,7 +333,7 @@ const loadTranslations = async (language) => {
     return translationCache[normalizedLanguage];
   }
 
-  const response = await fetch(`assets/i18n/${normalizedLanguage}.json`, { cache: "no-store" });
+  const response = await fetch(`/assets/i18n/${normalizedLanguage}.json`, { cache: "no-store" });
   if (!response.ok) {
     throw new Error(`Unable to load ${normalizedLanguage} translations`);
   }
@@ -414,7 +444,20 @@ analyticsEventTargets.forEach((target) => {
 languageButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const language = button.getAttribute("data-language-option");
-    if (language && language !== activeLanguage) {
+    if (!language) {
+      return;
+    }
+
+    if (button instanceof HTMLAnchorElement) {
+      button.setAttribute("href", getLanguageUrl(language));
+      localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
+      if (language !== activeLanguage) {
+        trackAnalyticsEvent("language_switch", { language });
+      }
+      return;
+    }
+
+    if (language !== activeLanguage) {
       setLanguage(language, { persist: true, track: true });
     }
   });
@@ -618,5 +661,5 @@ if (legalTriggers.length > 0 && legalModals.length > 0) {
   });
 }
 
-const preferredLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY) || DEFAULT_LANGUAGE;
-setLanguage(preferredLanguage, { persist: false });
+const initialLanguage = getInitialLanguage();
+setLanguage(initialLanguage, { persist: true });
